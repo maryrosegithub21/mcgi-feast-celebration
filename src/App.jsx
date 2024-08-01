@@ -1,0 +1,28 @@
+import {Routes, Route} from 'react-router-dom';
+import Home from './pages/HomePage/Home.jsx'
+import Login from './pages/HomePage/components/LogIn.jsx'
+import SignUp from './pages/HomePage/components/SignUp.jsx'
+import HeroBanner from './pages/HomePage/components/HeroBanner.jsx'
+import Welcome from './pages/HomePage/components/Welcome.jsx'
+import Slide from './pages/HomePage/components/SlideShowMain.jsx'
+
+
+function App() {
+
+
+  return (
+    <>
+     <Routes>
+     <Route path='/MCGI-BRETHREN-DAY-NZ' element={<Home />} />
+     <Route path='/MCGI-BRETHREN-DAY-NZ-LOGIN' element={<Login />} />
+     <Route path='/MCGI-BRETHREN-DAY-NZ-SIGNUP' element={<SignUp />} />
+     <Route path='/MCGI-BRETHREN-DAY-NZ' element={<HeroBanner />} />
+     <Route path='/MCGI-BRETHREN-DAY-NZ' element={<Welcome />} />
+     <Route path='/MCGI-BRETHREN-DAY-NZ' element={<Slide />} />
+
+     </Routes>
+    </>
+  )
+}
+
+export default App

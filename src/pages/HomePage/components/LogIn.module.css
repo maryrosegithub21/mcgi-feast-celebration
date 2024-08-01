@@ -1,0 +1,1245 @@
+/* === You can get this at google FA === */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* === main set up of Log In === */
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-weight: 200 1000;
+    
+ }
+ /* === color for the whole Log In === */
+:root {
+    --textColorBody1: rgb(114, 113, 113);
+    --backgroundColorLogIn : white;
+    --hoverColor: rgb(255, 3, 57);
+    --borderColor: black;
+
+
+ } 
+ 
+ @media only screen and (max-width: 246px){
+    /* === Main Container === */
+    .LogInConatainerDivMRA{
+       background-color: var(--backgroundColorLogIn);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       position: fixed;
+     top: 50%; 
+     left: 50%; 
+     padding: 10px 10px;
+     border: 5px solid var(--borderColor);
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     z-index: 1;
+  
+      
+    }
+    /* === Main Child === */
+   .LogInConatainerFormMRA{
+       background-color: var(--backgroundColorLogIn);
+       /* display: flex; */
+       align-items: center;
+       justify-content: center;
+       position: fixed;
+       height: 650px;
+       width: 100%;
+       top:0;
+       bottom:0;
+       right: 0;
+       left: 0;
+
+       display:inline;
+       overflow-y: auto;
+       
+   
+   }
+   /* == Close Button === */
+   .CloseButtonMRA{
+       height: 2rem;
+       width: 2rem;
+       position:absolute;
+       top:2rem;
+       right:2rem;
+   }
+   /* === Container of each part  right and left=== */
+   .LogInTeacherDivMRA{
+       margin-left: 3rem;
+       margin-right: 3rem;
+       position: relative;
+       
+   }
+   .LogInDivMRA{
+       margin-left: 3rem;
+       position:relative;
+       
+     
+   }
+   
+   /* === Link Container === */
+   .linkDivLogInMRA{
+       margin-top: 1rem;
+       margin-bottom: 1rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       display: inline-block;
+       overflow: hidden;
+       white-space: nowrap;
+   }
+   /* === Button === */
+   .LogInButtonTeacherMRA{
+       cursor: pointer;
+       background-color: var(--boxColorBackgroundHero);
+       outline: none;
+       color: var(--textColorHeroSub);
+       width: 100%;
+       border-radius: 0.5rem;
+       margin-top: 1rem;
+       width: 6rem;
+       justify-content: center;
+   }
+   .LogInButtonMRA{
+       cursor: pointer;
+       background-color: var(--boxColorBackgroundHero);
+       outline: none;
+       color: var(--textColorHeroSub);
+       width: 100%;
+       border-radius: 0.5rem;
+       margin-top: 1rem; 
+       width: 6rem;
+       justify-content: center;
+   }
+   /* === Button Sign In Container === */
+   .loginButtonContainer{
+       display: flex;
+       justify-content: center;
+   }
+   /* === LINK === */
+   .LogInLinkMRA{
+       margin-right: 1rem;
+       position: relative;
+       align-items: center;
+       justify-content: center;
+       color: var(--textColorBody1);
+       font-size: 1rem;
+   }
+   .LogInLinkMRA:hover{
+       color:var(--hoverColor);
+   }
+   
+   /* === input container=== */
+   .inputContainerLogIn{
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+
+       
+   }
+   
+   
+   /* === member and non member h1 === */
+   .h1LoginMRA{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: var(--textColorBody1);
+   }
+   
+    /* === to pull the loginStudent to show in the screen === */
+    .active {
+       top: 0;
+   
+   }
+   /* ================ Sign Up div ============ */
+   /* === Input Container === */
+   .inputContainerSignUp {
+       display: flex;
+       justify-content: flex;
+       flex-direction: column;
+       }
+   
+   /* === container button ==== */
+   .signUpButtonContainer {
+       display: flex;
+       justify-content: center;
+       }
+       /* === Sign Up Student Button === */
+   .SignUpButtonStudentMRA{
+           cursor: pointer;
+           background-color: var(--boxColorBackgroundHero);
+           outline: none;
+           color: var(--textColorHeroSub);
+           width: 100%;
+           border-radius: 0.5rem;
+           margin-top: 1rem; 
+           width: 6rem;
+           justify-content: center;
+       
+   }
+   
+       /* === Button === */
+   .SignUpButtonTeacherMRA{
+       cursor: pointer;
+       background-color: var(--boxColorBackgroundHero);
+       outline: none;
+       color: var(--textColorHeroSub);
+       width: 100%;
+       border-radius: 0.5rem;
+       margin-top: 1rem;
+       width: 6rem;
+       justify-content: center;
+   }
+    }
+
+  
+ @media only screen and (min-width: 246px){
+    /* === Main Container === */
+    .LogInConatainerDivMRA{
+       background-color: var(--backgroundColorLogIn);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       position: fixed;
+        
+     top: 50%; 
+     left: 50%; 
+     padding: 10px 10px;
+     border: 1px solid #ccc;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     z-index: 1;
+   
+      
+    }
+    /* === Main Child === */
+   .LogInConatainerFormMRA{
+       background-color: var(--backgroundColorLogIn);
+       /* display: flex; */
+       align-items: center;
+       justify-content: center;
+       position: fixed;
+       height: 650px;
+       width: 100%;
+       top:0;
+       bottom:0;
+       right: 0;
+       left: 0;
+
+       display:inline;
+       overflow-y: auto;
+       
+   
+   }
+   /* == Close Button === */
+   .CloseButtonMRA{
+       height: 2rem;
+       width: 2rem;
+       position:absolute;
+       top:2rem;
+       right:2rem;
+   }
+   /* === Container of each part  right and left=== */
+   .LogInTeacherDivMRA{
+       margin-left: 3rem;
+       margin-right: 3rem;
+       position: relative;
+       
+   }
+   .LogInDivMRA{
+       margin-left: 3rem;
+       position:relative;
+       
+     
+   }
+   
+   /* === Link Container === */
+   .linkDivLogInMRA{
+       margin-top: 1rem;
+       margin-bottom: 1rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       display: inline-block;
+       overflow: hidden;
+       white-space: nowrap;
+   }
+   /* === Button === */
+   .LogInButtonTeacherMRA{
+       cursor: pointer;
+       background-color: var(--boxColorBackgroundHero);
+       outline: none;
+       color: var(--textColorHeroSub);
+       width: 100%;
+       border-radius: 0.5rem;
+       margin-top: 1rem;
+       width: 6rem;
+       justify-content: center;
+   }
+   .LogInButtonMRA{
+       cursor: pointer;
+       background-color: var(--boxColorBackgroundHero);
+       outline: none;
+       color: var(--textColorHeroSub);
+       width: 100%;
+       border-radius: 0.5rem;
+       margin-top: 1rem; 
+       width: 6rem;
+       justify-content: center;
+   }
+   /* === Button Sign In Container === */
+   .loginButtonContainer{
+       display: flex;
+       justify-content: center;
+   }
+   /* === LINK === */
+   .LogInLinkMRA{
+       margin-right: 1rem;
+       position: relative;
+       align-items: center;
+       justify-content: center;
+       color: var(--textColorBody1);
+       font-size: 1rem;
+   }
+   .LogInLinkMRA:hover{
+       color:var(--hoverColor);
+   }
+   
+   /* === input container=== */
+   .inputContainerLogIn{
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+
+       
+   }
+   
+   
+   /* === member and non member h1 === */
+   .h1LoginMRA{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: var(--textColorBody1);
+   }
+   
+    /* === to pull the loginStudent to show in the screen === */
+    .active {
+       top: 0;
+   
+   }
+   /* ================ Sign Up div ============ */
+   /* === Input Container === */
+   .inputContainerSignUp {
+       display: flex;
+       justify-content: flex;
+       flex-direction: column;
+       }
+   
+   /* === container button ==== */
+   .signUpButtonContainer {
+       display: flex;
+       justify-content: center;
+       }
+       /* === Sign Up Student Button === */
+   .SignUpButtonStudentMRA{
+           cursor: pointer;
+           background-color: var(--boxColorBackgroundHero);
+           outline: none;
+           color: var(--textColorHeroSub);
+           width: 100%;
+           border-radius: 0.5rem;
+           margin-top: 1rem; 
+           width: 6rem;
+           justify-content: center;
+       
+   }
+   
+       /* === Button === */
+   .SignUpButtonTeacherMRA{
+       cursor: pointer;
+       background-color: var(--boxColorBackgroundHero);
+       outline: none;
+       color: var(--textColorHeroSub);
+       width: 100%;
+       border-radius: 0.5rem;
+       margin-top: 1rem;
+       width: 6rem;
+       justify-content: center;
+   }
+    }
+
+ 
+ @media only screen and (min-width: 314px){
+    /* === Main Container === */
+    .LogInConatainerDivMRA{
+       background-color: var(--backgroundColorLogIn);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       position: fixed;
+        
+     top: 50%; 
+     left: 50%; 
+     padding: 10px 10px;
+     border: 1px solid #ccc;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     z-index: 1;
+   
+      
+    }
+    /* === Main Child === */
+   .LogInConatainerFormMRA{
+       background-color: var(--backgroundColorLogIn);
+       /* display: flex; */
+       align-items: center;
+       justify-content: center;
+       position: fixed;
+       height: 650px;
+       width: 100%;
+       top:0;
+       bottom:0;
+       right: 0;
+       left: 0;
+
+       display:inline;
+       overflow-y: auto;
+       
+   
+   }
+   /* == Close Button === */
+   .CloseButtonMRA{
+       height: 2rem;
+       width: 2rem;
+       position:absolute;
+       top:2rem;
+       right:2rem;
+   }
+   /* === Container of each part  right and left=== */
+   .LogInTeacherDivMRA{
+       margin-left: 3rem;
+       margin-right: 3rem;
+       position: relative;
+       
+   }
+   .LogInDivMRA{
+       margin-left: 3rem;
+       position:relative;
+       
+     
+   }
+   
+   /* === Link Container === */
+   .linkDivLogInMRA{
+       margin-top: 1rem;
+       margin-bottom: 1rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       display: inline-block;
+       overflow: hidden;
+       white-space: nowrap;
+   }
+   /* === Button === */
+   .LogInButtonTeacherMRA{
+       cursor: pointer;
+       background-color: var(--boxColorBackgroundHero);
+       outline: none;
+       color: var(--textColorHeroSub);
+       width: 100%;
+       border-radius: 0.5rem;
+       margin-top: 1rem;
+       width: 6rem;
+       justify-content: center;
+   }
+   .LogInButtonMRA{
+       cursor: pointer;
+       background-color: var(--boxColorBackgroundHero);
+       outline: none;
+       color: var(--textColorHeroSub);
+       width: 100%;
+       border-radius: 0.5rem;
+       margin-top: 1rem; 
+       width: 6rem;
+       justify-content: center;
+   }
+   /* === Button Sign In Container === */
+   .loginButtonContainer{
+       display: flex;
+       justify-content: center;
+   }
+   /* === LINK === */
+   .LogInLinkMRA{
+       margin-right: 1rem;
+       position: relative;
+       align-items: center;
+       justify-content: center;
+       color: var(--textColorBody1);
+       font-size: 1rem;
+   }
+   .LogInLinkMRA:hover{
+       color:var(--hoverColor);
+   }
+   
+   /* === input container=== */
+   .inputContainerLogIn{
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+
+       
+   }
+   
+   
+   /* === member and non member h1 === */
+   .h1LoginMRA{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: var(--textColorBody1);
+   }
+   
+    /* === to pull the loginStudent to show in the screen === */
+    .active {
+       top: 0;
+   
+   }
+   /* ================ Sign Up div ============ */
+   /* === Input Container === */
+   .inputContainerSignUp {
+       display: flex;
+       justify-content: flex;
+       flex-direction: column;
+       }
+   
+   /* === container button ==== */
+   .signUpButtonContainer {
+       display: flex;
+       justify-content: center;
+       }
+       /* === Sign Up Student Button === */
+   .SignUpButtonStudentMRA{
+           cursor: pointer;
+           background-color: var(--boxColorBackgroundHero);
+           outline: none;
+           color: var(--textColorHeroSub);
+           width: 100%;
+           border-radius: 0.5rem;
+           margin-top: 1rem; 
+           width: 6rem;
+           justify-content: center;
+       
+   }
+   
+       /* === Button === */
+   .SignUpButtonTeacherMRA{
+       cursor: pointer;
+       background-color: var(--boxColorBackgroundHero);
+       outline: none;
+       color: var(--textColorHeroSub);
+       width: 100%;
+       border-radius: 0.5rem;
+       margin-top: 1rem;
+       width: 6rem;
+       justify-content: center;
+   }
+    }
+ 
+ @media only screen and (min-width: 481px){
+    /* === Main Container === */
+    .LogInConatainerDivMRA{
+       background-color: var(--backgroundColorLogIn);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       position: fixed;
+      
+     top: 50%; 
+     left: 50%; 
+     padding: 10px 10px;
+     border: 1px solid #ccc;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     z-index: 1;
+     
+      
+    }
+    /* === Main Child === */
+   .LogInConatainerFormMRA{
+       background-color: var(--backgroundColorLogIn);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       position: fixed;
+       height: 83%;
+       width: 100%;
+       margin: auto;
+       top:0;
+       bottom:0;
+       right: 0;
+       left: 0;
+       
+   
+   }
+   /* == Close Button === */
+   .CloseButtonMRA{
+       height: 2rem;
+       width: 2rem;
+       position:absolute;
+       top:2rem;
+       right:2rem;
+   }
+   /* === Container of each part  right and left=== */
+   .LogInTeacherDivMRA{
+       margin-left: 3rem;
+       margin-right: 3rem;
+       position: relative;
+       
+   }
+   .LogInDivMRA{
+       margin-left: 3rem;
+       position:relative;
+       
+     
+   }
+   
+   /* === Link Container === */
+   .linkDivLogInMRA{
+       margin-top: 1rem;
+       margin-bottom: 1rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       display: inline-block;
+       overflow: hidden;
+       white-space: nowrap;
+   }
+   /* === Button === */
+   .LogInButtonTeacherMRA{
+       cursor: pointer;
+       background-color: var(--boxColorBackgroundHero);
+       outline: none;
+       color: var(--textColorHeroSub);
+       width: 100%;
+       border-radius: 0.5rem;
+       margin-top: 1rem;
+       width: 6rem;
+       justify-content: center;
+   }
+   .LogInButtonMRA{
+       cursor: pointer;
+       background-color: var(--boxColorBackgroundHero);
+       outline: none;
+       color: var(--textColorHeroSub);
+       width: 100%;
+       border-radius: 0.5rem;
+       margin-top: 1rem; 
+       width: 6rem;
+       justify-content: center;
+   }
+   /* === Button Sign In Container === */
+   .loginButtonContainer{
+       display: flex;
+       justify-content: center;
+   }
+   /* === LINK === */
+   .LogInLinkMRA{
+       margin-right: 1rem;
+       position: relative;
+       align-items: center;
+       justify-content: center;
+       color: var(--textColorBody1);
+       font-size: 1rem;
+   }
+   .LogInLinkMRA:hover{
+       color:var(--hoverColor);
+   }
+   
+   /* === input container=== */
+   .inputContainerLogIn{
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+
+       
+   }
+   
+   
+   /* === member and non member h1 === */
+   .h1LoginMRA{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: var(--textColorBody1);
+   }
+   
+    /* === to pull the loginStudent to show in the screen === */
+    .active {
+       top: 0;
+   
+   }
+   /* ================ Sign Up div ============ */
+   /* === Input Container === */
+   .inputContainerSignUp {
+       display: flex;
+       justify-content: flex;
+       flex-direction: column;
+       }
+   
+   /* === container button ==== */
+   .signUpButtonContainer {
+       display: flex;
+       justify-content: center;
+       }
+       /* === Sign Up Student Button === */
+   .SignUpButtonStudentMRA{
+           cursor: pointer;
+           background-color: var(--boxColorBackgroundHero);
+           outline: none;
+           color: var(--textColorHeroSub);
+           width: 100%;
+           border-radius: 0.5rem;
+           margin-top: 1rem; 
+           width: 6rem;
+           justify-content: center;
+       
+   }
+   
+       /* === Button === */
+   .SignUpButtonTeacherMRA{
+       cursor: pointer;
+       background-color: var(--boxColorBackgroundHero);
+       outline: none;
+       color: var(--textColorHeroSub);
+       width: 100%;
+       border-radius: 0.5rem;
+       margin-top: 1rem;
+       width: 6rem;
+       justify-content: center;
+   }
+    }
+
+ @media only screen and (min-width: 611px){
+    /* === Main Container === */
+    .LogInConatainerDivMRA{
+       background-color: var(--backgroundColorLogIn);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       position: fixed;
+     top: 50%; 
+     left: 50%; 
+     padding: 10px 10px;
+     border: 1px solid #ccc;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     z-index: 1;
+     
+      
+    }
+    /* === Main Child === */
+   .LogInConatainerFormMRA{
+       background-color: var(--backgroundColorLogIn);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       position: fixed;
+       height: 83%;
+       width: 80%;
+       margin: auto;
+       top:0;
+       bottom:0;
+       right: 0;
+       left: 0;
+       
+   
+   }
+   /* == Close Button === */
+   .CloseButtonMRA{
+       height: 2rem;
+       width: 2rem;
+       position:absolute;
+       top:2rem;
+       right:2rem;
+   }
+   /* === Container of each part  right and left=== */
+   .LogInTeacherDivMRA{
+       margin-left: 3rem;
+       margin-right: 3rem;
+       position: relative;
+       
+   }
+   .LogInDivMRA{
+       margin-left: 3rem;
+       position:relative;
+       
+     
+   }
+   
+   /* === Link Container === */
+   .linkDivLogInMRA{
+       margin-top: 1rem;
+       margin-bottom: 1rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       display: inline-block;
+       overflow: hidden;
+       white-space: nowrap;
+   }
+   /* === Button === */
+   .LogInButtonTeacherMRA{
+       cursor: pointer;
+       background-color: var(--boxColorBackgroundHero);
+       outline: none;
+       color: var(--textColorHeroSub);
+       width: 100%;
+       border-radius: 0.5rem;
+       margin-top: 1rem;
+       width: 6rem;
+       justify-content: center;
+   }
+   .LogInButtonMRA{
+       cursor: pointer;
+       background-color: var(--boxColorBackgroundHero);
+       outline: none;
+       color: var(--textColorHeroSub);
+       width: 100%;
+       border-radius: 0.5rem;
+       margin-top: 1rem; 
+       width: 6rem;
+       justify-content: center;
+   }
+   /* === Button Sign In Container === */
+   .loginButtonContainer{
+       display: flex;
+       justify-content: center;
+   }
+   /* === LINK === */
+   .LogInLinkMRA{
+       margin-right: 1rem;
+       position: relative;
+       align-items: center;
+       justify-content: center;
+       color: var(--textColorBody1);
+       font-size: 1rem;
+   }
+   .LogInLinkMRA:hover{
+       color:var(--hoverColor);
+   }
+   
+   /* === input container=== */
+   .inputContainerLogIn{
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+
+       
+   }
+   
+   
+   /* === member and non member h1 === */
+ 
+   .h1LoginMRA{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: var(--textColorBody1);
+   }
+   
+    /* === to pull the loginStudent to show in the screen === */
+    .active {
+       top: 0;
+   
+   }
+   /* ================ Sign Up div ============ */
+   /* === Input Container === */
+   .inputContainerSignUp {
+       display: flex;
+       justify-content: flex;
+       flex-direction: column;
+       }
+   
+   /* === container button ==== */
+   .signUpButtonContainer {
+       display: flex;
+       justify-content: center;
+       }
+       /* === Sign Up Student Button === */
+   .SignUpButtonStudentMRA{
+           cursor: pointer;
+           background-color: var(--boxColorBackgroundHero);
+           outline: none;
+           color: var(--textColorHeroSub);
+           width: 100%;
+           border-radius: 0.5rem;
+           margin-top: 1rem; 
+           width: 6rem;
+           justify-content: center;
+       
+   }
+   
+       /* === Button === */
+   .SignUpButtonTeacherMRA{
+       cursor: pointer;
+       background-color: var(--boxColorBackgroundHero);
+       outline: none;
+       color: var(--textColorHeroSub);
+       width: 100%;
+       border-radius: 0.5rem;
+       margin-top: 1rem;
+       width: 6rem;
+       justify-content: center;
+   }
+    }
+
+ @media only screen and (min-width: 768px){
+    /* === Main Container === */
+    .LogInConatainerDivMRA{
+       background-color: var(--backgroundColorLogIn);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       position: fixed;
+     top: 50%; 
+     left: 50%; 
+     padding: 10px 10px;
+     border: 1px solid #ccc;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     z-index: 1;
+     
+      
+    }
+    /* === Main Child === */
+   .LogInConatainerFormMRA{
+       background-color: var(--backgroundColorLogIn);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       position: fixed;
+       height: 83%;
+       width: 65%;
+       margin: auto;
+       top:0;
+       bottom:0;
+       right: 0;
+       left: 0;
+       
+   
+   }
+   /* == Close Button === */
+   .CloseButtonMRA{
+       height: 2rem;
+       width: 2rem;
+       position:absolute;
+       top:2rem;
+       right:2rem;
+   }
+   /* === Container of each part  right and left=== */
+   .LogInTeacherDivMRA{
+       margin-left: 3rem;
+       margin-right: 3rem;
+       position: relative;
+       
+   }
+   .LogInDivMRA{
+       margin-left: 3rem;
+       position:relative;
+       
+     
+   }
+   
+   /* === Link Container === */
+   .linkDivLogInMRA{
+       margin-top: 1rem;
+       margin-bottom: 1rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       display: inline-block;
+       overflow: hidden;
+       white-space: nowrap;
+   }
+   /* === Button === */
+   .LogInButtonTeacherMRA{
+       cursor: pointer;
+       background-color: var(--boxColorBackgroundHero);
+       outline: none;
+       color: var(--textColorHeroSub);
+       width: 100%;
+       border-radius: 0.5rem;
+       margin-top: 1rem;
+       width: 6rem;
+       justify-content: center;
+   }
+   .LogInButtonMRA{
+       cursor: pointer;
+       background-color: var(--boxColorBackgroundHero);
+       outline: none;
+       color: var(--textColorHeroSub);
+       width: 100%;
+       border-radius: 0.5rem;
+       margin-top: 1rem; 
+       width: 6rem;
+       justify-content: center;
+   }
+   /* === Button Sign In Container === */
+   .loginButtonContainer{
+       display: flex;
+       justify-content: center;
+   }
+   /* === LINK === */
+   .LogInLinkMRA{
+       margin-right: 1rem;
+       position: relative;
+       align-items: center;
+       justify-content: center;
+       color: var(--textColorBody1);
+       font-size: 1rem;
+   }
+   .LogInLinkMRA:hover{
+       color:var(--hoverColor);
+   }
+   
+   /* === input container=== */
+   .inputContainerLogIn{
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+
+       
+   }
+   
+   
+   /* === member and non member h1 === */
+  
+   .h1LoginMRA{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: var(--textColorBody1);
+   }
+   
+    /* === to pull the loginStudent to show in the screen === */
+    .active {
+       top: 0;
+   
+   }
+   /* ================ Sign Up div ============ */
+   /* === Input Container === */
+   .inputContainerSignUp {
+       display: flex;
+       justify-content: flex;
+       flex-direction: column;
+       }
+   
+   /* === container button ==== */
+   .signUpButtonContainer {
+       display: flex;
+       justify-content: center;
+       }
+       /* === Sign Up Student Button === */
+   .SignUpButtonStudentMRA{
+           cursor: pointer;
+           background-color: var(--boxColorBackgroundHero);
+           outline: none;
+           color: var(--textColorHeroSub);
+           width: 100%;
+           border-radius: 0.5rem;
+           margin-top: 1rem; 
+           width: 6rem;
+           justify-content: center;
+       
+   }
+   
+       /* === Button === */
+   .SignUpButtonTeacherMRA{
+       cursor: pointer;
+       background-color: var(--boxColorBackgroundHero);
+       outline: none;
+       color: var(--textColorHeroSub);
+       width: 100%;
+       border-radius: 0.5rem;
+       margin-top: 1rem;
+       width: 6rem;
+       justify-content: center;
+   }
+    }
+    
+ @media only screen and (min-width: 1024px){
+ /* === Main Container === */
+ .LogInConatainerDivMRA{
+    background-color: var(--backgroundColorLogIn);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+  top: 50%; 
+  left: 50%; 
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  
+   
+ }
+ /* === Main Child === */
+.LogInConatainerFormMRA{
+    background-color: var(--backgroundColorLogIn);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 83%;
+    width: 50%;
+    margin: auto;
+    top:0;
+    bottom:0;
+    right: 0;
+    left: 0;
+    
+
+}
+/* == Close Button === */
+.CloseButtonMRA{
+    height: 2rem;
+    width: 2rem;
+    position:absolute;
+    top:2rem;
+    right:2rem;
+}
+/* === Container of each part  right and left=== */
+.LogInTeacherDivMRA{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    position: relative;
+    
+}
+.LogInDivMRA{
+    margin-left: 3rem;
+    position:relative;
+    
+  
+}
+
+/* === Link Container === */
+.linkDivLogInMRA{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+/* === Button === */
+.LogInButtonTeacherMRA{
+    cursor: pointer;
+    background-color: var(--boxColorBackgroundHero);
+    outline: none;
+    color: var(--textColorHeroSub);
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    width: 6rem;
+    justify-content: center;
+}
+.LogInButtonMRA{
+    cursor: pointer;
+    background-color: var(--boxColorBackgroundHero);
+    outline: none;
+    color: var(--textColorHeroSub);
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-top: 1rem; 
+    width: 6rem;
+    justify-content: center;
+}
+/* === Button Sign In Container === */
+.loginButtonContainer{
+    display: flex;
+    justify-content: center;
+}
+/* === LINK === */
+.LogInLinkMRA{
+    margin-right: 1rem;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    color: var(--textColorBody1);
+    font-size: 1rem;
+}
+.LogInLinkMRA:hover{
+    color:var(--hoverColor);
+}
+
+/* === input container=== */
+.inputContainerLogIn{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+
+   /* === member and non member h1 === */
+
+.h1LoginMRA{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--textColorBody1);
+}
+
+ /* === to pull the loginStudent to show in the screen === */
+ .active {
+    top: 0;
+
+}
+/* ================ Sign Up div ============ */
+/* === Input Container === */
+.inputContainerSignUp {
+    display: flex;
+    justify-content: flex;
+    flex-direction: column;
+    }
+
+/* === container button ==== */
+.signUpButtonContainer {
+    display: flex;
+    justify-content: center;
+    }
+    /* === Sign Up Student Button === */
+.SignUpButtonStudentMRA{
+        cursor: pointer;
+        background-color: var(--boxColorBackgroundHero);
+        outline: none;
+        color: var(--textColorHeroSub);
+        width: 100%;
+        border-radius: 0.5rem;
+        margin-top: 1rem; 
+        width: 6rem;
+        justify-content: center;
+    
+}
+
+    /* === Button === */
+.SignUpButtonTeacherMRA{
+    cursor: pointer;
+    background-color: var(--boxColorBackgroundHero);
+    outline: none;
+    color: var(--textColorHeroSub);
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    width: 6rem;
+    justify-content: center;
+}
+ }

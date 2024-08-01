@@ -1,0 +1,149 @@
+/* === You can get this at google FA === */
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* === main set up of banner === */
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-weight: 200 1000;
+    
+ } 
+
+/* =============================Small Screen=============================================== */
+@media only screen and (max-width: 246px){
+    .parentContainerHeroMRA{
+        background: url("../../../assets/hero/fiesta.png")no-repeat center/cover ;
+        display: flex;
+        background-size: cover;
+        width: 100%;
+        height: 3rem;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-wrap: wrap;
+        flex-direction: row;
+    
+     }
+       
+}
+
+/* ===== Mobile ========= */
+@media only screen and (min-width: 246px){
+    .parentContainerHeroMRA{
+        background: url("../../../assets/hero/fiesta.png")no-repeat center/cover ;
+        display: flex;
+        background-size: cover;
+        width: 100%;
+        height: 5rem;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-wrap: wrap;
+        flex-direction: row;
+    
+     }
+
+}
+
+@media only screen and (min-width: 314px){
+    .parentContainerHeroMRA{
+        background: url("../../../assets/hero/fiesta.png")no-repeat center/cover ;
+        display: flex;
+        background-size: cover;
+        width: 100%;
+        height: 10rem;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-wrap: wrap;
+        flex-direction: row;
+    
+     }
+}
+/* ============ tablet =========== */
+@media only screen and (min-width: 481px){
+/* === Container of the whole hero === */
+.parentContainerHeroMRA{
+    background: url("../../../assets/hero/fiesta.png")no-repeat center/cover ;
+    display: flex;
+    background-size: cover;
+    width: 100%;
+    height: 15rem;
+    justify-content: flex-start;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+ }
+}
+
+/* ============ tablet =========== */
+@media only screen and (min-width: 611px){
+    /* === Container of the whole hero === */
+    .parentContainerHeroMRA{
+        background: url("../../../assets/hero/fiesta.png")no-repeat center/cover ;
+        display: flex;
+        background-size: cover;
+        width: 100%;
+        height: 20rem;
+        justify-content: center;
+
+        position: relative;
+        flex-wrap: wrap;
+        flex-direction: row;
+    
+     }
+    }
+/* ======== Laptop ============ */
+@media only screen and (min-width: 768px){
+/* === Container of the whole hero === */
+.parentContainerHeroMRA{
+    background: url("../../../assets/hero/fiesta.png")no-repeat center/cover ;
+    display: flex;
+    background-size: cover;
+    width: 100%;
+    height: 23rem;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+ }
+    
+}
+/* ======= Desktop =========== */
+@media only screen and (min-width: 1024px){
+/* === Container of the whole hero === */
+.parentContainerHeroMRA{
+    background: url("../../../assets/hero/fiesta.png")no-repeat center/cover ;
+    display: flex;
+    background-size: cover;
+    width: 100%;
+    height: 33rem;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+ }
+}
+
+/* ============ Big Screen ============== */
+@media only screen and (min-width: 1200px){
+/* === Container of the whole hero === */
+.parentContainerHeroMRA{
+    background: url("../../../assets/hero/fiesta.png")no-repeat center/cover ;
+    display: flex;
+    background-size: cover;
+    width: 100%;
+    height: 35rem;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+ }
+}
+
