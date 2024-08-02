@@ -6,20 +6,17 @@ import styles from './Welcome.module.css'
 // === To applied the style you have to import this === //
 
 // === Import Photos from the folder=== //
-// import creativity from '../../../../'
-// import critical from '../../../../assets/Home/Group3.png'
-// import communication from '../../../../assets/Home/Group4.png'
-// import technology from '../../../../assets/Home/Group2.png'
-// import star from '../../../../assets/Home/star.png'
+import creativity from '../../../assets/home/free1.png'
+import critical from '../../../assets/home/free2.png'
+import communication from '../../../assets/home/free3.png'
+import technology from '../../../assets/home/free4.png'
+
 import classroom from '../../../assets/hero/legacy.png'
 
 // ===== FOR SHOWING THE PROGRAMMES HELPS TEACHER AND SCHOOL === //
 import { useState } from 'react'
 import { useEffect } from 'react'
 import { FaBullseye } from 'react-icons/fa6'
-
-// ===== FOR SIGN UP BUTTON ===== //
-// import LogIn from './LogIn'
 
 // for showing the sign up or log in form
 import { useNavigate } from 'react-router-dom';
@@ -132,10 +129,10 @@ useEffect(() => {
        <div className={styles.parentDivBody2MRA}>
        <h2 className={styles.childH2Body2MRA}>Feast Dedicated to God</h2>
     <div className={styles.childDivImageBody2MRA}>
-      {/* <img className={styles.imgCreativity}src={creativity} alt="creativity" ></img>
+      <img className={styles.imgCreativity}src={creativity} alt="creativity" ></img>
        <img className={styles.imgCritical}src={critical} alt="critical" ></img>
        <img className={styles.imgCommunication}src={communication} alt="communication" ></img>
-       <img className={styles.imgTechnology}src={technology} alt="technology" ></img> */}
+       <img className={styles.imgTechnology}src={technology} alt="technology" ></img>
     </div>
     <div className={styles.childDivBody2MRA}>
     <button onClick={handleClickLearningPathways}  className={styles.LearningPathwaysButtonBody2MRA}>

@@ -194,8 +194,7 @@ const handleClickClose = () => {
             <Link onClick={handleClickMemberLogIn} className={styles.LogInLinkMRA}>Members</Link>
             <Link onClick={handleClickNonMemberLogIn} className={styles.LogInLinkMRA} >Guests</Link>
         </div>
-
-
+        
           {/* ==== MEMBER LOG IN === */}
           {memberLogInShown && 
           < div className={styles.inputContainerLogIn}>
@@ -230,7 +229,7 @@ const handleClickClose = () => {
         <br />
         <div >{messageToRenderNonMember}</div>
       
-        {/* ^^^^^ MEMBER LOG IN ^^^^^ */}
+        {/* ^^^^^ NON MEMBER LOG IN ^^^^^ */}
         </div>
           <button className={styles.CloseButtonMRA} onClick={handleClickClose}>X</button>  
         </form>

@@ -10,6 +10,16 @@
     font-weight: 200 1000;
     
  } 
+/* === color for the whole hero banner === */
+:root {
+    --buttoncolor: rgb(18, 5, 253);
+    --textColor: rgb(114, 113, 113);
+    --textColorbutton: white;
+    --textColorSecond: #1b05c1;
+
+ } 
+ 
+
 
 /* =============================Small Screen=============================================== */
 @media only screen and (max-width: 246px){
@@ -18,7 +28,7 @@
         display: flex;
         background-size: cover;
         width: 100%;
-        height: 3rem;
+        height: 20rem;
         justify-content: center;
         align-items: center;
         position: relative;
@@ -26,6 +36,40 @@
         flex-direction: row;
     
      }
+ 
+     .btnSignUpDivHero{
+        display: flex;
+        position: relative;
+        top: 7rem;
+        flex-direction: column;
+    
+     }
+     /* =====Button Style ======= */
+     .SignUpButtonHeroMRA{
+        cursor: pointer;
+        background-color: var(--buttoncolor);
+        outline: none;
+        height: 1.3rem;
+        color: var(--textColorbutton);
+        width: 120px;
+        border-radius: 0.5rem;
+        font-size: 0.5rem;
+    }
+    
+    /* === information at the buttom part of button sign up   === */
+    .HeroBanH5MRA{
+        display: flex;
+        position: relative;
+        padding: 1rem 1rem;
+        justify-content: center; 
+        align-items: center;
+        height: 1rem;
+        width: 120px; 
+        top:0.5rem;
+        font-size: 0.5rem;
+        text-align: justify;
+        color: var(--textColorSecond);
+    }  
        
 }
 
@@ -36,7 +80,7 @@
         display: flex;
         background-size: cover;
         width: 100%;
-        height: 5rem;
+        height: 20rem;
         justify-content: center;
         align-items: center;
         position: relative;
@@ -44,7 +88,40 @@
         flex-direction: row;
     
      }
-
+ 
+     .btnSignUpDivHero{
+        display: flex;
+        position: relative;
+        top: 7rem;
+        flex-direction: column;
+    
+     }
+     /* =====Button Style ======= */
+     .SignUpButtonHeroMRA{
+        cursor: pointer;
+        background-color: var(--buttoncolor);
+        outline: none;
+        height: 1.3rem;
+        color: var(--textColorbutton);
+        width: 120px;
+        border-radius: 0.5rem;
+        font-size: 0.5rem;
+    }
+    
+    /* === information at the buttom part of button sign up   === */
+    .HeroBanH5MRA{
+        display: flex;
+        position: relative;
+        padding: 1rem 1rem;
+        justify-content: center; 
+        align-items: center;
+        height: 1rem;
+        width: 120px; 
+        top:0.5rem;
+        font-size: 0.5rem;
+        text-align: justify;
+        color: var(--textColorSecond);
+    }  
 }
 
 @media only screen and (min-width: 314px){
@@ -53,14 +130,47 @@
         display: flex;
         background-size: cover;
         width: 100%;
-        height: 10rem;
+        height:25rem;
         justify-content: center;
-        align-items: center;
         position: relative;
         flex-wrap: wrap;
         flex-direction: row;
     
      }
+     
+     .btnSignUpDivHero{
+        display: flex;
+        position: relative;
+        top: 8rem;
+        flex-direction: column;
+    
+     }
+     /* =====Button Style ======= */
+     .SignUpButtonHeroMRA{
+        cursor: pointer;
+        background-color: var(--buttoncolor);
+        outline: none;
+        height: 1.3rem;
+        color: var(--textColorbutton);
+        width: 150px;
+        border-radius: 0.5rem;
+        font-size: 0.5rem;
+    }
+    
+    /* === information at the buttom part of button sign up   === */
+    .HeroBanH5MRA{
+        display: flex;
+        position: relative;
+        padding: 1rem 1rem;
+        justify-content: center; 
+        align-items: center;
+        height: 1rem;
+        width: 150px; 
+        top:1rem;
+        font-size: 0.8rem;
+        text-align: justify;
+        color: var(--textColorSecond);
+    }  
 }
 /* ============ tablet =========== */
 @media only screen and (min-width: 481px){
@@ -70,13 +180,47 @@
     display: flex;
     background-size: cover;
     width: 100%;
-    height: 15rem;
-    justify-content: flex-start;
+    height:32rem;
+    justify-content: center;
     position: relative;
     flex-wrap: wrap;
     flex-direction: row;
 
  }
+ 
+ .btnSignUpDivHero{
+    display: flex;
+    position: relative;
+    top: 10rem;
+    flex-direction: column;
+
+ }
+ /* =====Button Style ======= */
+ .SignUpButtonHeroMRA{
+    cursor: pointer;
+    background-color: var(--buttoncolor);
+    outline: none;
+    height: 1.5rem;
+    color: var(--textColorbutton);
+    width: 180px;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+/* === information at the buttom part of button sign up   === */
+.HeroBanH5MRA{
+    display: flex;
+    position: relative;
+    padding: 1rem 1rem;
+    justify-content: center; 
+    align-items: center;
+    height: 1.5rem;
+    width: 180px; 
+    top:1.8rem;
+    font-size: 1rem;
+    text-align: justify;
+    color: var(--textColorSecond);
+}  
 }
 
 /* ============ tablet =========== */
@@ -87,14 +231,47 @@
         display: flex;
         background-size: cover;
         width: 100%;
-        height: 20rem;
+        height:32rem;
         justify-content: center;
-
         position: relative;
         flex-wrap: wrap;
         flex-direction: row;
     
      }
+    
+     .btnSignUpDivHero{
+        display: flex;
+        position: relative;
+        top: 10rem;
+        flex-direction: column;
+    
+     }
+     /* =====Button Style ======= */
+     .SignUpButtonHeroMRA{
+        cursor: pointer;
+        background-color: var(--buttoncolor);
+        outline: none;
+        height: 2rem;
+        color: var(--textColorbutton);
+        width: 200px;
+        border-radius: 0.5rem;
+        font-size: 1.2rem;
+    }
+    
+    /* === information at the buttom part of button sign up   === */
+    .HeroBanH5MRA{
+        display: flex;
+        position: relative;
+        padding: 1rem 1rem;
+        justify-content: center; 
+        align-items: center;
+        height: 2rem;
+        width: 200px; 
+        top:1.8rem;
+        font-size: 1.1rem;
+        text-align: justify;
+        color: var(--textColorSecond);
+    }  
     }
 /* ======== Laptop ============ */
 @media only screen and (min-width: 768px){
@@ -104,14 +281,47 @@
     display: flex;
     background-size: cover;
     width: 100%;
-    height: 23rem;
+    height:43rem;
     justify-content: center;
     position: relative;
     flex-wrap: wrap;
     flex-direction: row;
 
  }
-    
+
+ .btnSignUpDivHero{
+    display: flex;
+    position: relative;
+    top: 15rem;
+    flex-direction: column;
+
+ }
+ /* =====Button Style ======= */
+ .SignUpButtonHeroMRA{
+    cursor: pointer;
+    background-color: var(--buttoncolor);
+    outline: none;
+    height: 2rem;
+    color: var(--textColorbutton);
+    width: 200px;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* === information at the buttom part of button sign up   === */
+.HeroBanH5MRA{
+    display: flex;
+    position: relative;
+    padding: 1rem 1rem;
+    justify-content: center; 
+    align-items: center;
+    height: 2rem;
+    width: 200px; 
+    top:1.8rem;
+    font-size: 1.1rem;
+    text-align: justify;
+    color: var(--textColorSecond);
+}  
 }
 /* ======= Desktop =========== */
 @media only screen and (min-width: 1024px){
@@ -121,13 +331,48 @@
     display: flex;
     background-size: cover;
     width: 100%;
-    height: 33rem;
+    height:43rem;
     justify-content: center;
     position: relative;
     flex-wrap: wrap;
     flex-direction: row;
 
  }
+
+ .btnSignUpDivHero{
+    display: flex;
+    position: relative;
+    top: 15rem;
+    flex-direction: column;
+
+ }
+ /* =====Button Style ======= */
+ .SignUpButtonHeroMRA{
+    cursor: pointer;
+    background-color: var(--buttoncolor);
+    outline: none;
+    height: 2rem;
+    color: var(--textColorbutton);
+    width: 200px;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* === information at the buttom part of button sign up   === */
+.HeroBanH5MRA{
+    display: flex;
+    position: relative;
+    padding: 1rem 1rem;
+    justify-content: center; 
+    align-items: center;
+    height: 2rem;
+    width: 200px; 
+    top:1.8rem;
+    font-size: 1.1rem;
+    text-align: justify;
+    color: var(--textColorSecond);
+}
+
 }
 
 /* ============ Big Screen ============== */
@@ -138,12 +383,46 @@
     display: flex;
     background-size: cover;
     width: 100%;
-    height: 35rem;
+    height:43rem;
     justify-content: center;
     position: relative;
     flex-wrap: wrap;
     flex-direction: row;
 
  }
+
+ .btnSignUpDivHero{
+    display: flex;
+    position: relative;
+    top: 15rem;
+    flex-direction: column;
+
+ }
+ /* =====Button Style ======= */
+ .SignUpButtonHeroMRA{
+    cursor: pointer;
+    background-color: var(--buttoncolor);
+    outline: none;
+    height: 2rem;
+    color: var(--textColorbutton);
+    width: 200px;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* === information at the buttom part of button sign up   === */
+.HeroBanH5MRA{
+    display: flex;
+    position: relative;
+    padding: 1rem 1rem;
+    justify-content: center; 
+    align-items: center;
+    height: 2rem;
+    width: 200px; 
+    top:1.8rem;
+    font-size: 1.1rem;
+    text-align: justify;
+    color: var(--textColorSecond);
+}
 }
 

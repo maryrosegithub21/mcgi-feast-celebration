@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 // === To applied the style you have to import this === //
-import styles from '../components/LogIn.module.css'
+import styles from '../components/SignUp.module.css'
 // === To applied the style you have to import this === //
 import LogInImg from '../../../assets/login-singup/login-logo.png'
 

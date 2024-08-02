@@ -13,18 +13,15 @@ import fiesta1 from '../../../assets/home/Fiesta 4.png'
 import fiesta2 from '../../../assets/home/Fiesta 2.png'
 import fiesta3 from '../../../assets/home/Fiesta 3.png'
 import fiesta4 from '../../../assets/home/Fiesta.png'
-// import SlideShow from './SlideShow'
+
 
 // ==== For SlideShow  on the right==== //
 import { useState } from 'react'
 import { useEffect } from 'react'
 
- // === need to install  npm install use-resize-observer --save-dev to use this === //
-//  import useResizeObserver from 'use-resize-observer';
 
 export default function Body1() {
- // need to install  npm install use-resize-observer --save-dev to use this //
-//  const { ref, width, height } = useResizeObserver();
+
 
 // =====  For Slide show on the right ===== //
 const [img1, setImg1] = useState(true)   
@@ -117,13 +114,12 @@ useEffect(() => {
     <div>
        
 <div className={styles.parentDivBody1MRA}>
-{/* <div className={styles.childDivBody1MRA}> */}
 <div className={styles.grandchildBody1LeftMRA}>
         <h1 className={styles.grandchilSlideH1}>Welcome to MCGI New Zealand</h1>
         <br />
         <p className={styles.body1PMRA}>Welcome to Members Church of God International (MCGI) in New Zealand, a place where faith is nurtured, and spirituality flourishes. Our congregation is united by a shared belief in the teachings of Jesus Christ and a commitment to spreading His message of faith, hope and love. We embrace all who seek spiritual growth, offering a sanctuary of worship and a community of support.</p>
         <br />
-        <div className={styles.imageStudentCreateBody1MRA}>
+        <div className={styles.imageQuoteBody1MRA}>
       <img className={styles.quote} src={quote1} alt="quote"></img> 
         < img  className={styles.quote} src={quote2} alt="quote"></img>
         <img  className={styles.quote} src={quote3} alt="quote"></img>
