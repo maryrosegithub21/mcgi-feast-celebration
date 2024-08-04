@@ -5,6 +5,7 @@ import SignUp from './pages/HomePage/components/SignUp.jsx'
 import HeroBanner from './pages/HomePage/components/HeroBanner.jsx'
 import Welcome from './pages/HomePage/components/Welcome.jsx'
 import Slide from './pages/HomePage/components/SlideShowMain.jsx'
+import Footer from '../src/common/Footer.jsx'
 
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
      <Route path='/MCGI-BRETHREN-DAY-NZ' element={<HeroBanner />} />
      <Route path='/MCGI-BRETHREN-DAY-NZ' element={<Welcome />} />
      <Route path='/MCGI-BRETHREN-DAY-NZ' element={<Slide />} />
+     <Route path='/MCGI-BRETHREN-DAY-NZ' element={<Footer />} />
+
 
      </Routes>
     </>

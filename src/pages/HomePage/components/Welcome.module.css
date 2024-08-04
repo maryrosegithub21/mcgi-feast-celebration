@@ -16,8 +16,13 @@
     --textMainColor: #1b05c1;
     --textColorBody2: rgb(114, 113, 113);
     --backgroundColorBody2 : white;
-    --secondaryTextColorBody2: rgb(15, 163, 189);
+    --buttonborder: rgb(15, 163, 189);
     --secondaryBackgroundBody2 : rgb(232, 232, 232);
+
+    --buttoncolor: rgb(18, 5, 253);
+    --textColorbutton: white;
+
+
     
 
  } 
@@ -32,7 +37,7 @@
        height: 25rem;
        background-color: var(--backgroundColorBody2);
        color: var(--textColorBody2);
-       margin-top: 70rem;
+       margin-top: 60rem;
        bottom: 2rem;
       
    }
@@ -66,6 +71,7 @@
    overflow: auto; 
    max-width: 100%; 
    max-height: 100%;
+   border-radius: 10px;
 }
 
 .imgCritical{
@@ -77,6 +83,8 @@
     overflow: auto; 
     max-width: 100%; 
     max-height: 100%;
+    border-radius: 10px;
+
 }
 .imgCommunication{
     height:100px;
@@ -87,6 +95,8 @@
     overflow: auto; 
     max-width: 100%; 
     max-height: 100%;
+    border-radius: 10px;
+
 }
 .imgTechnology{
     height:100px;
@@ -97,6 +107,8 @@
     overflow: auto; 
     max-width: 100%; 
     max-height: 100%;
+    border-radius: 10px;
+
 }
    
    /* === for both text at the top === */
@@ -116,7 +128,7 @@
    
    /* ====for all the button on the bottom part===== */
    .LearningPathwaysButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
     display: flex;
@@ -130,7 +142,7 @@
        width: 12rem;
    }
    .IR4ButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
        display: flex;
@@ -144,7 +156,7 @@
        width: 12rem;
    }
    .KeyCompetenciesButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
        display: flex;
@@ -158,7 +170,7 @@
        width: 12rem;
    }
    .DigitalTechnologiesButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
        display: flex;
@@ -187,24 +199,19 @@
        font-size: 0.5rem;
    }
    .descriptionEnchanceBody2MRA {
-   /* display: flex;
-   position: relative;
-   height: 5rem;
-
-
-   margin-bottom: 1rem; */
    resize: both; 
    overflow: auto; 
      max-width: 100%; 
    max-height: 100%; 
-   margin-top: 38rem;
+   margin-bottom: 1rem;
 
    }
    .descriptionEnchancePBody2MRA{
    display: flex;
-   position:absolute;
-   margin-top: 2rem;
-   left: 3rem;
+   position:relative;
+text-align: justify;
+
+
    }
    /* ^^^ For the enchance key competencies ^^^ */
    
@@ -242,16 +249,22 @@
    /* right details */
    .waitingH1{
     font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
    
    
 }
    .startH1{
     font-size: 1rem;
+    width: 100%;
+    text-align: justify;
+    
     
    }
    .informationP{
    font-size: 0.8rem;
-   margin-bottom: 0.5rem;
+   width: 100%;
+   text-align: justify;
    }
 
    /* === Button Container Style  === */
@@ -264,11 +277,11 @@
    
    .SignUpButtonBody2MRA{
        cursor: pointer;
-       background-color: var(--secondaryTextColorBody2);
+       background-color: var(--buttoncolor);
        outline: none;
        margin-right: 1rem;
        height: 2rem;
-       color: var(--textMainColor);
+       color: var(--textColorbutton);
        width: 200px;
        border-radius: 0.5rem;
        left:0;
@@ -287,7 +300,7 @@
        height: 25rem;
        background-color: var(--backgroundColorBody2);
        color: var(--textColorBody2);
-       margin-top: 70rem;
+       margin-top: 57rem;
        bottom: 2rem;
       
    }
@@ -321,6 +334,7 @@
    overflow: auto; 
    max-width: 100%; 
    max-height: 100%;
+   border-radius: 10px;
 }
 .imgCritical{
     height:100px;
@@ -331,6 +345,8 @@
     overflow: auto; 
     max-width: 100%; 
     max-height: 100%;
+    border-radius: 10px;
+
 }
 .imgCommunication{
     height:100px;
@@ -341,6 +357,8 @@
     overflow: auto; 
     max-width: 100%; 
     max-height: 100%;
+    border-radius: 10px;
+
 }
 .imgTechnology{
     height:105px;
@@ -351,6 +369,8 @@
     overflow: auto; 
     max-width: 100%; 
     max-height: 100%;
+    border-radius: 10px;
+
 }
    
    /* === for both text at the top === */
@@ -370,7 +390,7 @@
    
    /* ====for all the button on the bottom part===== */
    .LearningPathwaysButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
     display: flex;
@@ -381,9 +401,10 @@
        height: 2rem;
        cursor: pointer;
        font-size: 0.6rem;
+       width: 10rem;
    }
    .IR4ButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
        display: flex;
@@ -394,10 +415,11 @@
        height: 2rem;
        cursor: pointer;
        font-size: 0.6rem;
+       width: 10rem;
 
    }
    .KeyCompetenciesButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
        display: flex;
@@ -408,10 +430,11 @@
        height: 2rem;
        cursor: pointer;
        font-size: 0.6rem;
+       width: 10rem;
 
    }
    .DigitalTechnologiesButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
        display: flex;
@@ -422,6 +445,7 @@
        height: 2rem;
        cursor: pointer;
        font-size: 0.6rem;
+       width: 10rem;
 
    }
    /* ^^^ for all the button on the bottom part ^^^*/
@@ -440,16 +464,16 @@
        font-size: 0.4rem;
    }
    .descriptionEnchanceBody2MRA {
-   display: flex;
-   position: relative;
-   height: 5rem;
-   margin-bottom: 1rem;
+    resize: both; 
+    overflow: auto; 
+      max-width: 100%; 
+    max-height: 100%; 
+    margin-bottom: 1rem;
    }
    .descriptionEnchancePBody2MRA{
    display: flex;
-   position:absolute;
-   margin-top: 2rem;
-   left: 3rem;
+   position:relative;
+  text-align: justify;
    }
    /* ^^^ For the enchance key competencies ^^^ */
    
@@ -487,33 +511,37 @@
    /* right details */
    .waitingH1{
     font-size: 1.2rem;
-   
+    width: 100%;
+    text-align: center;
    
 }
    .startH1{
     font-size: 1rem;
+    width: 100%;
+    text-align: justify;
     
    }
    .informationP{
    font-size: 0.8rem;
-   margin-bottom: 0.5rem;
-   }
+   width: 100%;
+    text-align: justify; 
+}
 
    /* === Button Container Style  === */
    .btnDivBody2classroomMRA{
        display: flex;
        width: 100%;
-   
+       justify-content: center;  
    }
   
    
    .SignUpButtonBody2MRA{
        cursor: pointer;
-       background-color: var(--secondaryTextColorBody2);
+       background-color: var(--buttoncolor);
        outline: none;
        margin-right: 1rem;
        height: 2rem;
-       color: var(--textMainColor);
+       color: var(--textColorbutton);
        width: 200px;
        border-radius: 0.5rem;
        left:0;
@@ -614,7 +642,7 @@
    
    /* ====for all the button on the bottom part===== */
    .LearningPathwaysButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
     display: flex;
@@ -627,7 +655,7 @@
        font-size: 0.6rem;
    }
    .IR4ButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
        display: flex;
@@ -641,7 +669,7 @@
 
    }
    .KeyCompetenciesButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
        display: flex;
@@ -655,7 +683,7 @@
 
    }
    .DigitalTechnologiesButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
        display: flex;
@@ -684,16 +712,16 @@
        font-size: 0.5rem;
    }
    .descriptionEnchanceBody2MRA {
-   display: flex;
-   position: relative;
-   height: 5rem;
-   margin-bottom: 1rem;
+    resize: both; 
+    overflow: auto; 
+      max-width: 100%; 
+    max-height: 100%; 
+    margin-bottom: 1rem;
    }
    .descriptionEnchancePBody2MRA{
    display: flex;
-   position:absolute;
-   margin-top: 2rem;
-   left: 3rem;
+   position:relative;
+   width: 100%;
    }
    /* ^^^ For the enchance key competencies ^^^ */
    
@@ -731,16 +759,21 @@
    /* right details */
    .waitingH1{
     font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
    
    
 }
    .startH1{
     font-size: 1rem;
+    width: 100%;
+    text-align: justify;
     
    }
    .informationP{
    font-size: 0.8rem;
-   margin-bottom: 0.5rem;
+   width: 100%;
+    text-align: justify;
    }
 
    /* === Button Container Style  === */
@@ -755,11 +788,11 @@
    
    .SignUpButtonBody2MRA{
        cursor: pointer;
-       background-color: var(--secondaryTextColorBody2);
+       background-color: var(--buttoncolor);
        outline: none;
        margin-right: 1rem;
        height: 2rem;
-       color: var(--textMainColor);
+       color: var(--textColorbutton);
        width: 200px;
        border-radius: 0.5rem;
        left:0;
@@ -857,7 +890,7 @@
    
    /* ====for all the button on the bottom part===== */
    .LearningPathwaysButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
     display: flex;
@@ -869,7 +902,7 @@
        font-size: 0.6rem;
    }
    .IR4ButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
        display: flex;
@@ -882,7 +915,7 @@
 
    }
    .KeyCompetenciesButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
        display: flex;
@@ -895,7 +928,7 @@
 
    }
    .DigitalTechnologiesButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
        display: flex;
@@ -923,16 +956,16 @@
        font-size: 0.7rem;
    }
    .descriptionEnchanceBody2MRA {
-   display: flex;
-   position: relative;
-   height: 5rem;
+    resize: both; 
+   overflow: auto; 
+     max-width: 100%; 
+   max-height: 100%; 
    margin-bottom: 1rem;
    }
    .descriptionEnchancePBody2MRA{
    display: flex;
-   position:absolute;
-   margin-top: 2rem;
-   left: 3rem;
+   position:relative;
+   text-align: justify;
    }
    /* ^^^ For the enchance key competencies ^^^ */
    
@@ -945,8 +978,7 @@
    width: 100%;
    align-items: center;
    justify-content: center;
-   margin-top: 3rem;
-   margin-bottom: 3rem;
+   margin-bottom: 1rem;
    padding-left: 3rem;
    padding-right: 3rem;
    padding-bottom: 2rem;
@@ -997,11 +1029,11 @@
    
    .SignUpButtonBody2MRA{
        cursor: pointer;
-       background-color: var(--secondaryTextColorBody2);
+       background-color: var(--buttoncolor);
        outline: none;
        margin-right: 1rem;
        height: 2rem;
-       color: var(--textMainColor);
+       color: var(--textColorbutton);
        width: 200px;
        border-radius: 0.5rem;
        left:0;
@@ -1100,7 +1132,7 @@
    
    /* ====for all the button on the bottom part===== */
    .LearningPathwaysButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
     display: flex;
@@ -1112,7 +1144,7 @@
        font-size: 0.6rem;
    }
    .IR4ButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
        display: flex;
@@ -1125,7 +1157,7 @@
 
    }
    .KeyCompetenciesButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
        display: flex;
@@ -1138,7 +1170,7 @@
 
    }
    .DigitalTechnologiesButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
        display: flex;
@@ -1166,16 +1198,17 @@
        font-size: 0.7rem;
    }
    .descriptionEnchanceBody2MRA {
-   display: flex;
-   position: relative;
-   height: 5rem;
-   margin-bottom: 1rem;
+    resize: both; 
+    overflow: auto; 
+      max-width: 100%; 
+    max-height: 100%; 
+    margin-bottom: 1rem;
+ 
    }
    .descriptionEnchancePBody2MRA{
    display: flex;
-   position:absolute;
-   margin-top: 2rem;
-   left: 3rem;
+   position:relative;
+   text-align: justify;
    }
    /* ^^^ For the enchance key competencies ^^^ */
    
@@ -1188,8 +1221,7 @@
    width: 100%;
    align-items: center;
    justify-content: center;
-   margin-top: 3rem;
-   margin-bottom: 3rem;
+   margin-bottom: 1rem;
    padding-left: 3rem;
    padding-right: 3rem;
    padding-bottom: 2rem;
@@ -1239,11 +1271,11 @@
    
    .SignUpButtonBody2MRA{
        cursor: pointer;
-       background-color: var(--secondaryTextColorBody2);
+       background-color: var(--buttoncolor);
        outline: none;
        margin-right: 1rem;
        height: 2rem;
-       color: var(--textMainColor);
+       color: var(--textColorbutton);
        width: 200px;
        border-radius: 0.5rem;
        left:0;
@@ -1350,7 +1382,7 @@
    
    /* ====for all the button on the bottom part===== */
    .LearningPathwaysButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
     display: flex;
@@ -1362,7 +1394,7 @@
        font-size: 0.7rem;
    }
    .IR4ButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
        display: flex;
@@ -1375,7 +1407,7 @@
 
    }
    .KeyCompetenciesButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
        display: flex;
@@ -1388,7 +1420,7 @@
 
    }
    .DigitalTechnologiesButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
        display: flex;
@@ -1416,16 +1448,17 @@
        font-size: 0.7rem;
    }
    .descriptionEnchanceBody2MRA {
-   display: flex;
-   position: relative;
-   height: 5rem;
-   margin-bottom: 1rem;
+    resize: both; 
+    overflow: auto; 
+      max-width: 100%; 
+    max-height: 100%; 
+    margin-bottom: 1rem;
+ 
    }
    .descriptionEnchancePBody2MRA{
    display: flex;
-   position:absolute;
-   margin-top: 2rem;
-   left: 3rem;
+   position:relative;
+   text-align: justify;
    }
    /* ^^^ For the enchance key competencies ^^^ */
    
@@ -1438,8 +1471,7 @@
    width: 100%;
    align-items: center;
    justify-content: center;
-   margin-top: 3rem;
-   margin-bottom: 3rem;
+     margin-bottom: 1rem;
    padding-left: 3rem;
    padding-right: 3rem;
    padding-bottom: 2rem;
@@ -1472,6 +1504,10 @@
    .startH1{
     font-size: 1rem;
    }
+   .informationP{
+    font-size: 0.8rem;
+
+   }
    /* === Button Container Style  === */
    .btnDivBody2classroomMRA{
        margin-top: 3rem;
@@ -1485,12 +1521,12 @@
    
    .SignUpButtonBody2MRA{
        cursor: pointer;
-       background-color: var(--secondaryTextColorBody2);
+       background-color: var(--buttoncolor);
        outline: none;
        padding: 0rem 0.5rem;
        margin: 0rem 1rem;
        height: 2rem;
-       color: var(--textMainColor);
+       color: var(--textColorbutton);
        width: 150px;
        border-radius: 0.5rem;
        left:0;
@@ -1595,7 +1631,7 @@ flex-direction: row;
 
 /* ====for all the button on the bottom part===== */
 .LearningPathwaysButtonBody2MRA{
-    border: 0.2rem solid var(--secondaryTextColorBody2);
+    border: 0.2rem solid var(--buttonborder);
     color: var(--textColorBody2);
     border-radius: 0.3rem;
  display: flex;
@@ -1606,7 +1642,7 @@ flex-direction: row;
     cursor: pointer;
 }
 .IR4ButtonBody2MRA{
-    border: 0.2rem solid var(--secondaryTextColorBody2);
+    border: 0.2rem solid var(--buttonborder);
     color: var(--textColorBody2);
     border-radius: 0.3rem;
     display: flex;
@@ -1617,7 +1653,7 @@ flex-direction: row;
     cursor: pointer;
 }
 .KeyCompetenciesButtonBody2MRA{
-    border: 0.2rem solid var(--secondaryTextColorBody2);
+    border: 0.2rem solid var(--buttonborder);
     color: var(--textColorBody2);
     border-radius: 0.3rem;
     display: flex;
@@ -1628,7 +1664,7 @@ flex-direction: row;
     cursor: pointer;
 }
 .DigitalTechnologiesButtonBody2MRA{
-    border: 0.2rem solid var(--secondaryTextColorBody2);
+    border: 0.2rem solid var(--buttonborder);
     color: var(--textColorBody2);
     border-radius: 0.3rem;
     display: flex;
@@ -1654,16 +1690,17 @@ flex-direction: row;
     font-size: 0.9rem;
 }
 .descriptionEnchanceBody2MRA {
-display: flex;
-position: relative;
-height: 4rem;
-/* margin-bottom: 1rem; */
+    resize: both; 
+    overflow: auto; 
+      max-width: 100%; 
+    max-height: 100%; 
+    margin-bottom: 1rem;
 }
 .descriptionEnchancePBody2MRA{
 display: flex;
-position:absolute;
-margin-top: 2rem;
-left: 3rem;
+position:relative;
+text-align: justify;
+
 }
 /* ^^^ For the enchance key competencies ^^^ */
 
@@ -1676,8 +1713,7 @@ height: 25rem;
 width: 100%;
 align-items: center;
 justify-content: center;
-margin-top: 3rem;
-margin-bottom: 3rem;
+margin-bottom: 1rem;
 padding-left: 3rem;
 padding-right: 3rem;
 padding-bottom: 2rem;
@@ -1710,6 +1746,9 @@ padding-left: 7rem;
 .startH1{
     font-size: 1.5rem;
    }
+.informationP{
+    font-size: 1rem;
+}
 /* === Button Container Style  === */
 .btnDivBody2classroomMRA{
     margin-top: 3rem;
@@ -1722,12 +1761,12 @@ padding-left: 7rem;
 
 .SignUpButtonBody2MRA{
     cursor: pointer;
-    background-color: var(--secondaryTextColorBody2);
+    background-color: var(--buttoncolor);
     outline: none;
     padding: 0rem 0.5rem;
     margin: 0rem 1rem;
     height: 2rem;
-    color: var(--textMainColor);
+    color: var(--textColorbutton);
     width: 150px;
     border-radius: 0.5rem;
     left:0;
@@ -1834,7 +1873,7 @@ padding-left: 7rem;
    
    /* ====for all the button on the bottom part===== */
    .LearningPathwaysButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
     display: flex;
@@ -1848,7 +1887,7 @@ padding-left: 7rem;
    }
    
    .IR4ButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
        display: flex;
@@ -1861,7 +1900,7 @@ padding-left: 7rem;
 
    }
    .KeyCompetenciesButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
        display: flex;
@@ -1874,7 +1913,7 @@ padding-left: 7rem;
 
    }
    .DigitalTechnologiesButtonBody2MRA{
-       border: 0.2rem solid var(--secondaryTextColorBody2);
+       border: 0.2rem solid var(--buttonborder);
        color: var(--textColorBody2);
        border-radius: 0.3rem;
        display: flex;
@@ -1914,9 +1953,9 @@ padding-left: 7rem;
    }
    .descriptionEnchancePBody2MRA{
    display: flex;
-   position:absolute;
-   margin-top: 2rem;
-   left: 3rem;
+   position:relative;
+    width: 100%;
+
    }
    /* ^^^ For the enchance key competencies ^^^ */
    
@@ -1961,6 +2000,11 @@ padding-left: 7rem;
    }
    .startH1{
     font-size: 1.5rem;
+    
+   }
+   .informationP{
+    font-size: 1rem;
+
    }
    /* === Button Container Style  === */
    .btnDivBody2classroomMRA{
@@ -1974,12 +2018,12 @@ padding-left: 7rem;
    
    .SignUpButtonBody2MRA{
     cursor: pointer;
-    background-color: var(--secondaryTextColorBody2);
+    background-color: var(--buttoncolor);
     outline: none;
     padding: 0rem 0.5rem;
     margin: 0rem 1rem;
     height: 2rem;
-    color: var(--textMainColor);
+    color: var(--textColorbutton);
     width: 180px;
     border-radius: 0.5rem;
     left:0;

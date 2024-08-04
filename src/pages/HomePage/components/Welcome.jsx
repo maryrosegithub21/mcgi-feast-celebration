@@ -356,7 +356,7 @@ It is a biblical talk which aims to help people learn the Bible deeper through a
 
     <button type="button" onClick={handleClicksignUpClass} className={styles.SignUpButtonBody2MRA}>
     {/* {isSignUpClass ?  <LogIn /> : "" }  */}
-      SIGN UP
+      REGISTER
     </button>
    
     </div>
