@@ -79,10 +79,10 @@ const getSignUpNonMember = (req,res) => {
   console.log("/api/signup-Teacher endpoint was hit🎯")
   console.log(req.body)
   // conditional statement that Handling the result when no value on input
-  if (req.body.name !== "" && req.body.email !== "" && req.body.password !== ""){
+  if (req.body.name !== "" && req.body.contact !== "" && req.body.newReturning !== "" && req.body.address !== "" && req.body.religion !== "" && req.body.gender !== ""  && req.body.email !== "" && req.body.password !== ""){
   // Insert Value to Database 
-  const query =`INSERT INTO guests (full_name, email, password) VALUES (?,?,?);`
-  pool.execute(query,[req.body.name, req.body.email, req.body.password],(err,result)=>{
+  const query =`INSERT INTO guests (full_name, contact,newReturning,address,religion,gender, email, password) VALUES (?,?,?,?,?,?,?,?);`
+  pool.execute(query,[req.body.name, req.body.contact,  req.body.newReturning, req.body.address ,  req.body.religion, req.body.gender, req.body.email, req.body.password],(err,result)=>{
       // conditional statement that Handling the result 
       if (err) {
         console.log("Database error:", err);
