@@ -23,6 +23,8 @@ This template provides a minimal setup to get React working in Vite with HMR and
 ### npm install use-resize-observer --save-dev
 ### npm install react-slideshow-image -S
 ### npm i -D react-router-DOM
+### npm install react-router-dom@6
+
 
 - 4 . Runs the app in the development mode:
 
