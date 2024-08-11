@@ -14,7 +14,7 @@ function App() {
   return (
     <>
      <Routes>
-     <Route path='/' element={<Home />} />
+     <Route path='/github/workspace/MCGI-BRETHREN-DAY-NZ' element={<Home />} />
      <Route path='/MCGI-BRETHREN-DAY-NZ-LOGIN' element={<Login />} />
      <Route path='/MCGI-BRETHREN-DAY-NZ-SIGNUP' element={<SignUp />} />
      {/* <Route path='/MCGI-BRETHREN-DAY-NZ' element={<HeroBanner />} />
