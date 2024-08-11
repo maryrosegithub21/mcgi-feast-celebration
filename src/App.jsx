@@ -2,10 +2,10 @@ import {Routes, Route} from 'react-router-dom';
 import Home from './pages/HomePage/Home.jsx'
 import Login from './pages/HomePage/components/LogIn.jsx'
 import SignUp from './pages/HomePage/components/SignUp.jsx'
-import HeroBanner from './pages/HomePage/components/HeroBanner.jsx'
-import Welcome from './pages/HomePage/components/Welcome.jsx'
-import Slide from './pages/HomePage/components/SlideShowMain.jsx'
-import Footer from '../src/common/Footer.jsx'
+// import HeroBanner from './pages/HomePage/components/HeroBanner.jsx'
+// import Welcome from './pages/HomePage/components/Welcome.jsx'
+// import Slide from './pages/HomePage/components/SlideShowMain.jsx'
+// import Footer from '../src/common/Footer.jsx'
 
 
 function App() {
@@ -14,13 +14,13 @@ function App() {
   return (
     <>
      <Routes>
-     <Route path='/' element={<Home />} />
+     <Route path='/github/workspace/MCGI-BRETHREN-DAY-NZ' element={<Home />} />
      <Route path='/MCGI-BRETHREN-DAY-NZ-LOGIN' element={<Login />} />
      <Route path='/MCGI-BRETHREN-DAY-NZ-SIGNUP' element={<SignUp />} />
-     <Route path='/MCGI-BRETHREN-DAY-NZ' element={<HeroBanner />} />
+     {/* <Route path='/MCGI-BRETHREN-DAY-NZ' element={<HeroBanner />} />
      <Route path='/MCGI-BRETHREN-DAY-NZ' element={<Welcome />} />
      <Route path='/MCGI-BRETHREN-DAY-NZ' element={<Slide />} />
-     <Route path='/MCGI-BRETHREN-DAY-NZ' element={<Footer />} />
+     <Route path='/MCGI-BRETHREN-DAY-NZ' element={<Footer />} /> */}
 
 
      </Routes>
