@@ -14,7 +14,7 @@ function App() {
   return (
     <>
      <Routes>
-     <Route path='/MCGI-BRETHREN-DAY-NZ' element={<Home />} />
+     <Route path='/' element={<Home />} />
      <Route path='/MCGI-BRETHREN-DAY-NZ-LOGIN' element={<Login />} />
      <Route path='/MCGI-BRETHREN-DAY-NZ-SIGNUP' element={<SignUp />} />
      <Route path='/MCGI-BRETHREN-DAY-NZ' element={<HeroBanner />} />
