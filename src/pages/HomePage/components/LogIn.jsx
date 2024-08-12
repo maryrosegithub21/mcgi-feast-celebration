@@ -174,7 +174,7 @@ useEffect(() => {
 const [isShown, setIsShown] = useState(true); 
 const handleClickClose = () => {
   setIsShown(false);
-  navigate(`/MCGI-BRETHREN-DAY-NZ`);
+  navigate(`/`);
 };
 // // ^^^^^^^^^^^^^^^^^^^^^^^ For button close ^^^^^^^^^^^^^^^^//
 
