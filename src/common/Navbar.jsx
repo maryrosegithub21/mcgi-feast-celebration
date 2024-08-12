@@ -47,7 +47,7 @@ const [nav, setNav] = useState(false)
       {/* === Center Part of the Header === */}
     <nav>
       <ul className={nav ? [styles.MenuNav, styles.active].join(' ') : [styles.MenuNav]}>
-      <Link to="/MCGI-BRETHREN-DAY-NZ">HOME</Link>
+      <Link to="/mcgi-feast-portal">HOME</Link>
       <Link to="/MCGI-BRETHREN-DAY-NZ">ABOUT</Link>
       <Link to="/MCGI-BRETHREN-DAY-NZ">EVENTS</Link>
       </ul>
