@@ -88,14 +88,18 @@ nav a:hover{
     color: var(--secondaryColor);
 }
 
-.headerLiRight{
-    padding: 0px 0px;
-    margin: 0px 5px;
-}
 
 .headerLiRight {
   padding: 0px 0px;
   margin: 0px 5px;
+  cursor: pointer;
+  background-color: var(--);
+  outline: none;
+  height: 1.3rem;
+  color: var(--textColorbutton);
+  width: 120px;
+  border-radius: 0.5rem;
+  font-size: 0.5rem;
 }
 
 

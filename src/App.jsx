@@ -13,16 +13,15 @@ function App() {
 
   return (
     <>
+    
      <Routes>
      <Route path='/' element={<Home />} />
+
     <Route path='/mcgi-feast-portal' element={<Home />} />
      
      <Route path='/mcgi-feast-portal-log-in' element={<Login />} />
      <Route path='/mcgi-feast-portal-sign-up' element={<SignUp />} />
-     {/* <Route path='/MCGI-BRETHREN-DAY-NZ' element={<HeroBanner />} />
-     <Route path='/MCGI-BRETHREN-DAY-NZ' element={<Welcome />} />
-     <Route path='/MCGI-BRETHREN-DAY-NZ' element={<Slide />} />
-     <Route path='/MCGI-BRETHREN-DAY-NZ' element={<Footer />} /> */}
+
 
 
      </Routes>

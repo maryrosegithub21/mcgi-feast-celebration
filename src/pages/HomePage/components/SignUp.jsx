@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 
 // === To applied the style you have to import this === //
@@ -254,7 +255,9 @@ if (passwordSignUpNonMember !== confirmSignUpNonMember) {
 const [isShown, setIsShown] = useState(true); 
 const handleClickClose = () => {
   setIsShown(false);
+
   navigate(`/mcgi-feast-portal`);
+
 };
 // // ^^^^^^^^^^^^^^^^^^^^^^^ For button close ^^^^^^^^^^^^^^^^//
 

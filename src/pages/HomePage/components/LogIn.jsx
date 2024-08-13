@@ -174,7 +174,9 @@ useEffect(() => {
 const [isShown, setIsShown] = useState(true); 
 const handleClickClose = () => {
   setIsShown(false);
+
   navigate(`/mcgi-feast-portal`);
+
 };
 // // ^^^^^^^^^^^^^^^^^^^^^^^ For button close ^^^^^^^^^^^^^^^^//
 
