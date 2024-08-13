@@ -14,7 +14,7 @@ export default function HeroBanner() {
 const handleClicksignUpHero = (e) => {
   e.preventDefault();
 // path for showing the sign up form 
-  navigate('/MCGI-BRETHREN-DAY-NZ-SIGNUP'); 
+  navigate('/mcgi-brethren-day-nz-signup'); 
 };
   return (
   < div className={styles.parentContainerHeroMRA}>   

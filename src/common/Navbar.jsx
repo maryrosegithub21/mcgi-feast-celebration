@@ -18,23 +18,34 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 // // ^^^^ To access this you have to install the 'npm install react-icons' for font awesome ^^^^ //
 
+// for showing the sign up form
+import { useNavigate } from 'react-router-dom';
+
 export default function Navbar() {
+
+  const navigate = useNavigate(); // for showing the the sign up form
+
 
 // === variable use and function of button close and open === //
 const [nav, setNav] = useState(false)
   // ^^^ variable use and function of button close and open ^^^ //
 
     // === for login display ===//
- const [isShown, setIsShown] = useState(false);
+//  const [isShown, setIsShown] = useState(false);
  const handleClickLogIn = () => {
-   setIsShown((current) => !current);
+  //  setIsShown((current) => !current);
+  navigate('/mcgi-brethren-day-nz-login'); 
+
+ 
  };
     // ^^^ for login display ^^^//
 
     // === for Sign UP display ===//
-    const[isShownSignUP, setIsShownSignUp] = useState(false);
+    // const[isShownSignUP, setIsShownSignUp] = useState(false);
     const handleClickSignUp = () => {
-      setIsShownSignUp((current) => !current);
+      // e.preventDefault();
+      // setIsShownSignUp((current) => !current);
+      navigate('/mcgi-brethren-day-nz-signup'); 
     };
     // ^^^ for SignUp display ^^^//
 
@@ -60,12 +71,14 @@ const [nav, setNav] = useState(false)
     <ul className={styles.headerUlRight}>
       <br />
    
-
-      <Link onClick={handleClickSignUp}className={styles.headerLiRight}>REGISTER</Link>
-      {isShownSignUP ? <SignUp/> : ""}
+      <button type='submit' className={styles.headerLiRight} onClick={handleClickSignUp}>
+      REGISTER
+  </button>
+      {/* <Link type='submit' onClick={handleClickSignUp}className={styles.headerLiRight}>REGISTER</Link> */}
+      {/* {isShownSignUP ? <SignUp/> : ""} */}
       <p>|</p>
       <Link onClick={handleClickLogIn} className={styles.headerLiRight}>LOGIN</Link>
-      {isShown ?  <LogIn />  : "" } 
+      {/* {isShown ?  <LogIn />  : "" }  */}
 
     </ul>
     </nav>

@@ -1,3 +1,4 @@
+
 /* === You can get this at google FA === */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
@@ -46,7 +47,7 @@
        right: 0;
        left: 0;
        display:inline;
-       overflow-y: auto;
+       /* overflow-y: auto; */
    }
    /* == Close Button === */
    .CloseButtonMRA{
@@ -161,8 +162,8 @@
        right: 0;
        left: 0;
 
-       display:inline;
-       overflow-y: auto;
+       /* display:inline; */
+       /* overflow-y: auto; */
        
    
    }
@@ -280,8 +281,8 @@
        right: 0;
        left: 0;
 
-       display:inline;
-       overflow-y: auto;
+       /* display:inline; */
+       /* overflow-y: auto; */
        
    
    }
@@ -657,6 +658,7 @@
        position: relative;
        align-items: center;
        justify-content: center;
+       text-align: center;
        color: var(--textColorBody1);
        font-size: 1rem;
    }
@@ -778,6 +780,7 @@
     justify-content: center;
     color: var(--textColorBody1);
     font-size: 1rem;
+    text-align: center;
 }
 .LogInLinkMRA:hover{
     color:var(--hoverColor);
@@ -830,3 +833,143 @@
     justify-content: center;
 }
  }
+
+
+ @media only screen and (min-width: 1200px){
+
+  
+    /* === Main Container === */
+    .LogInConatainerDivMRA{
+       background-color: var(--backgroundColorLogIn);
+       display: flex;
+       /* align-items: center; */
+       /* justify-content: center; */
+       position: fixed;
+     /* top: 50%; 
+     left: 50%; 
+     padding: 10px 10px; */
+     /* margin-top: 0.1rem; */
+     border: 1px solid #ccc;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     /* z-index: 1; */
+     
+      
+    }
+    /* === Main Child === */
+   .LogInConatainerFormMRA{
+       background-color: var(--backgroundColorLogIn);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       /* position: fixed; */
+       height: 100%;
+       width: 100%;
+       /* margin: auto; */
+       margin-top:12rem;
+       z-index: 1;
+       
+
+       
+   
+   }
+   /* == Close Button === */
+   .CloseButtonMRA{
+       height: 2rem;
+       width: 2rem;
+       position:absolute;
+       top:2rem;
+       right:2rem;
+   }
+   /* === Container of each part  right and left=== */
+   /* .LogInTeacherDivMRA{
+       margin-left: 3rem;
+       margin-right: 3rem;
+       position: relative;  
+   } */
+   /* === Link Container === */
+   /* .linkDivLogInMRA{
+       margin-top: 1rem;
+       margin-bottom: 1rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       display: inline-block;
+       overflow: hidden;
+       white-space: nowrap;
+   } */
+   /* === LINK === */
+   /* .LogInLinkMRA{
+       margin-right: 1rem;
+       position: relative;
+       align-items: center;
+       justify-content: center;
+       color: var(--textColorBody1);
+       font-size: 1rem;
+       text-align: center;
+   }
+   .LogInLinkMRA:hover{
+       color:var(--hoverColor);
+   } */
+      /* === member and non member h1 === */
+   
+   .h1LoginMRA{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: var(--textColorBody1);
+   }
+   /* ================ Sign Up div ============ */
+   /* === Input Container === */
+   /* .inputContainerSignUp {
+       display: flex;
+       justify-content: flex;
+       flex-direction: column;
+       } */
+   
+   /* === container button ==== */
+   .signUpButtonContainer {
+       display: flex;
+       justify-content: center;
+       }
+       /* === Sign Up Student Button === */
+   .SignUpButtonMemberMRA{
+           cursor: pointer;
+           background-color: var(--boxColorBackgroundHero);
+           outline: none;
+           color: var(--textColorHeroSub);
+           width: 100%;
+           border-radius: 0.5rem;
+           margin-top: 1rem; 
+           width: 6rem;
+           justify-content: center;
+       
+   }
+   
+       /* === Button === */
+   .SignUpButtonTeacherMRA{
+       cursor: pointer;
+       background-color: var(--boxColorBackgroundHero);
+       outline: none;
+       color: var(--textColorHeroSub);
+       width: 100%;
+       border-radius: 0.5rem;
+       margin-top: 1rem;
+       width: 6rem;
+       justify-content: center;
+   }
+   /* radio button */
+   .wrapnewreturn{
+    width: auto;
+    height: auto;
+    display: flex;
+justify-content: first baseline;
+align-items: center;
+flex-direction: row;   
+}
+   .signUpNewReturn{
+    display: inline-flex;
+
+   }
+
+    }
