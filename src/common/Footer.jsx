@@ -22,7 +22,7 @@ export default function Footer() {
             <li className={styles.footerList}>Legal information</li>
             <li className={styles.footerList}>Privacy information</li>
             <li className={styles.footerList}>Developed by Engaging Partners</li>
-          <li>©2024 Marketing Association | All right reserved</li>
+          <li>©2024 MCGI International | All right reserved</li>
 
           </ul>
           <br />
