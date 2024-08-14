@@ -34,7 +34,7 @@ const [nav, setNav] = useState(false)
 //  const [isShown, setIsShown] = useState(false);
  const handleClickLogIn = () => {
   //  setIsShown((current) => !current);
-  navigate('/mcgi-brethren-day-nz-login'); 
+  navigate('/mcgi-feast-portal-log-in'); 
 
  
  };
@@ -42,10 +42,10 @@ const [nav, setNav] = useState(false)
 
     // === for Sign UP display ===//
     // const[isShownSignUP, setIsShownSignUp] = useState(false);
-    const handleClickSignUp = () => {
-      // e.preventDefault();
-      // setIsShownSignUp((current) => !current);
-      navigate('/mcgi-brethren-day-nz-signup'); 
+    const handleClickSignUp = (e) => {
+      e.preventDefault();
+    // path for showing the sign up form 
+      navigate('/mcgi-feast-portal-sign-up'); 
     };
     // ^^^ for SignUp display ^^^//
 
@@ -59,8 +59,8 @@ const [nav, setNav] = useState(false)
     <nav>
       <ul className={nav ? [styles.MenuNav, styles.active].join(' ') : [styles.MenuNav]}>
       <Link to="/mcgi-feast-portal">HOME</Link>
-      <Link to="/MCGI-BRETHREN-DAY-NZ">ABOUT</Link>
-      <Link to="/MCGI-BRETHREN-DAY-NZ">EVENTS</Link>
+      <Link to="/mcgi-feast-portal">ABOUT</Link>
+      <Link to="/mcgi-feast-portal">EVENTS</Link>
       </ul>
 
    </nav>
@@ -77,7 +77,10 @@ const [nav, setNav] = useState(false)
       {/* <Link type='submit' onClick={handleClickSignUp}className={styles.headerLiRight}>REGISTER</Link> */}
       {/* {isShownSignUP ? <SignUp/> : ""} */}
       <p>|</p>
-      <Link onClick={handleClickLogIn} className={styles.headerLiRight}>LOGIN</Link>
+      {/* <Link onClick={handleClickLogIn} className={styles.headerLiRight}>LOGIN</Link> */}
+      <button type='submit' className={styles.headerLiRight} onClick={handleClickLogIn}>
+      LOG IN
+      </button>
       {/* {isShown ?  <LogIn />  : "" }  */}
 
     </ul>
