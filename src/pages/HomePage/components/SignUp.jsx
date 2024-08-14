@@ -56,7 +56,7 @@ useEffect(() => {
   if(nonmemberLogInShown === true) {
     // setmemberLogInShown(false)
     setnonmemberLogInShown(true)
-    navigate('/MCGI-BRETHREN-DAY-NZ-SIGNUP'); 
+    navigate('/mcgi-feast-portal-sign-up'); 
 
   }  
 }, [nonmemberLogInShown])
@@ -255,7 +255,6 @@ if (passwordSignUpNonMember !== confirmSignUpNonMember) {
 const [isShown, setIsShown] = useState(true); 
 const handleClickClose = () => {
   setIsShown(false);
-
   navigate(`/mcgi-feast-portal`);
 
 };
@@ -267,13 +266,18 @@ const handleClickClose = () => {
  <Navbar/>
       {isShown && 
       
-      <div className={styles.LogInConatainerDivMRA} id="form">
+      // <div className={styles.LogInConatainerDivMRA} id="form">
       
         <form className={styles.LogInConatainerFormMRA} >
+ 
     
        
         <div className={styles.LogInDivMRA}>
-        <img src={LogInImg} alt="LogInImg" style={{height:200, width:350}} className="styles.imageSignUp"></img>
+        {/* < div className={styles.btncloDivHero} >
+
+<button className={styles.CloseButtonMRA} onClick={handleClickClose}>X</button> 
+</div> */}
+        <img src={LogInImg} alt="LogInImg"  className={styles.imageSignUp}></img>
         <h1 className={styles.h1LoginMRA}>Sign Up</h1>
         {/* <div className={styles.linkDivLogInMRA}> */}
             {/* <Link {...btnPropsRegisterMember} onClick={handleClickMemberSignUp} className={styles.LogInLinkMRA}>Members</Link> */}
@@ -308,6 +312,7 @@ const handleClickClose = () => {
 
 
          {/* ==== Non MEMBER SIGN UP ==== */}
+
          {nonmemberLogInShown && 
           <div className={styles.inputContainerSignUp}>
          <p>Please Enter Full Name</p> 
@@ -369,9 +374,8 @@ const handleClickClose = () => {
          
         {/* ^^^^^ NON MEMBER SIGN UP ^^^^^ */}
         </div>
-          <button className={styles.CloseButtonMRA} onClick={handleClickClose}>X</button>  
         </form>
-       </div>
+      //  </div>
        }
       <Footer/>
 
