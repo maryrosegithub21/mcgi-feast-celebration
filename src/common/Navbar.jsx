@@ -41,11 +41,10 @@ const [nav, setNav] = useState(false)
     // ^^^ for login display ^^^//
 
     // === for Sign UP display ===//
-    // const[isShownSignUP, setIsShownSignUp] = useState(false);
     const handleClickSignUp = (e) => {
       e.preventDefault();
     // path for showing the sign up form 
-      navigate('/mcgi-feast-portal-sign-up'); 
+    window.open('https://docs.google.com/forms/d/1RHi93Cpq3e6zWXatLa7yLFjYH-64_ZIMzfcZhWFUSMc/edit', '_blank');
     };
     // ^^^ for SignUp display ^^^//
 
@@ -59,8 +58,8 @@ const [nav, setNav] = useState(false)
     <nav>
       <ul className={nav ? [styles.MenuNav, styles.active].join(' ') : [styles.MenuNav]}>
       <Link to="/mcgi-feast-portal">HOME</Link>
-      <Link to="/mcgi-feast-portal">ABOUT</Link>
-      <Link to="/mcgi-feast-portal">EVENTS</Link>
+      <Link to="/#welcome-our-beliefs">ABOUT</Link>
+      <Link to="/#event">EVENTS</Link>
       </ul>
 
    </nav>
@@ -74,15 +73,10 @@ const [nav, setNav] = useState(false)
       <button type='submit' className={styles.headerLiRight} onClick={handleClickSignUp}>
       REGISTER
   </button>
-      {/* <Link type='submit' onClick={handleClickSignUp}className={styles.headerLiRight}>REGISTER</Link> */}
-      {/* {isShownSignUP ? <SignUp/> : ""} */}
       <p>|</p>
-      {/* <Link onClick={handleClickLogIn} className={styles.headerLiRight}>LOGIN</Link> */}
-      <button type='submit' className={styles.headerLiRight} onClick={handleClickLogIn}>
+          <button type='submit' className={styles.headerLiRight} onClick={handleClickLogIn}>
       LOG IN
       </button>
-      {/* {isShown ?  <LogIn />  : "" }  */}
-
     </ul>
     </nav>
     </div>

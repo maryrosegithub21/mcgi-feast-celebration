@@ -1,6 +1,6 @@
 
 import React  from 'react'
-
+import { HashLink as Link } from 'react-router-hash-link';
 // === To applied the style you have to import this === //
 import styles from './Welcome.module.css'
 // === To applied the style you have to import this === //
@@ -104,14 +104,13 @@ export default function Body2() {
       setIr(true)
      }  
   }, [ir])
-  // ==== FOR HOW THE PROGRAMMES HELPS TEACHER AND SCHOOL ==== ///
+ 
 
 // ===== FOR SIGN UP BUTTON ===== //
 const [isSignUpClass, setIsSignUpClass] = useState(false);
 
 function handleClicksignUpClass(){
-  // setIsSignUpClass(true);
-  navigate('/home/login'); 
+  window.open('https://docs.google.com/forms/d/1RHi93Cpq3e6zWXatLa7yLFjYH-64_ZIMzfcZhWFUSMc/edit', '_blank');
 
 }
 useEffect(() => {
@@ -127,7 +126,7 @@ useEffect(() => {
   return (
     <div>
        <div className={styles.parentDivBody2MRA}>
-       <h2 className={styles.childH2Body2MRA}>Feast Dedicated to God</h2>
+       <h2 id="event" className={styles.childH2Body2MRA}>Feast Dedicated to God</h2>
     <div className={styles.childDivImageBody2MRA}>
       <img className={styles.imgCreativity}src={creativity} alt="creativity" ></img>
        <img className={styles.imgCritical}src={critical} alt="critical" ></img>
@@ -135,7 +134,7 @@ useEffect(() => {
        <img className={styles.imgTechnology}src={technology} alt="technology" ></img>
     </div>
     <div className={styles.childDivBody2MRA}>
-    <button onClick={handleClickLearningPathways}  className={styles.LearningPathwaysButtonBody2MRA}>
+    <button id="welcome-our-beliefs" onClick={handleClickLearningPathways}  className={styles.LearningPathwaysButtonBody2MRA}>
     Our Beliefs
     </button>
     <button onClick={handleClickDigitalTechnologies}  className={styles.DigitalTechnologiesButtonBody2MRA}>

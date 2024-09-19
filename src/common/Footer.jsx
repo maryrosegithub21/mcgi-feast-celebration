@@ -2,6 +2,21 @@ import React from 'react';
 import styles from './Footer.module.css';
 
 export default function Footer() {
+  const openFacebookPage = () => {
+    window.open('https://www.facebook.com/MCGICaresOfficial', '_blank');
+  };
+  const openInstagramPage = () =>{
+    window.open('https://www.instagram.com/mcgionline/?hl=en','_blank')
+  };
+  const openYoutubePage = () =>{
+    window.open('https://www.youtube.com/c/mcgichannel','_blank')
+  };
+  const openTwitterPage = () =>{
+    window.open('https://x.com/mcgidotorg','_blank')
+  };
+  const openPrivacyPage = () =>{
+    window.open('https://www.mcgi.org/privacy-policy/','_blank')
+  };
   return (
     <div>
       <div className={styles.container}>
@@ -19,11 +34,9 @@ export default function Footer() {
         <div>
           <h3 className={styles.footerH3MRA}>Our Website</h3>
           <ul>
-            <li className={styles.footerList}>Legal information</li>
-            <li className={styles.footerList}>Privacy information</li>
-            <li className={styles.footerList}>Developed by Engaging Partners</li>
-          <li>©2024 MCGI International | All right reserved</li>
-
+            <li className={styles.footerList} onClick={openPrivacyPage}>Privacy information</li>
+            <li className={styles.footerList}>Developed by Mary Rose</li>
+            <li className={styles.footerList}> ©2024 MCGI International | All right reserved</li>
           </ul>
           <br />
 
@@ -33,11 +46,10 @@ export default function Footer() {
           <h3 className={styles.footerH3MRA}>Connect With Us</h3>
 
           <ul>
-            <li className={styles.footerList}> Facebook</li>
-            <li className={styles.footerList}>Instagram</li>
-            <li className={styles.footerList}>Youtube</li>
-            <li className={styles.footerList}>Email</li>
-            <li className={styles.footerList}>Twitter</li>
+          <li className={styles.footerList} onClick={openFacebookPage}>Facebook</li>
+          <li className={styles.footerList} onClick={openInstagramPage}>Instagram</li>
+          <li className={styles.footerList} onClick={openYoutubePage}>Youtube</li>
+          <li className={styles.footerList} onClick={openTwitterPage}>Twitter</li>
           </ul>
         </div>
 

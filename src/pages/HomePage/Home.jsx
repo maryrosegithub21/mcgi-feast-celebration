@@ -5,6 +5,7 @@ import HeroBanner from '../HomePage/components/HeroBanner.jsx';
 import Welcome from '../HomePage/components/Welcome.jsx';
 import Slide from '../HomePage/components/SlideShowMain.jsx';
 import Footer from '../../common/Footer.jsx'
+import AiChat from './components/AiChat.jsx';
 
 
 
@@ -17,6 +18,7 @@ export default function Home() {
 <Slide />
 <Welcome />
 <Footer />
+<AiChat/>
 
 
 

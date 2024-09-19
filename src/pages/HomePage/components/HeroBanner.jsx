@@ -14,7 +14,7 @@ export default function HeroBanner() {
 const handleClicksignUpHero = (e) => {
   e.preventDefault();
 // path for showing the sign up form 
-  navigate('/mcgi-feast-portal-sign-up'); 
+window.open('https://docs.google.com/forms/d/1RHi93Cpq3e6zWXatLa7yLFjYH-64_ZIMzfcZhWFUSMc/edit', '_blank');
 };
   return (
   < div className={styles.parentContainerHeroMRA}>   
