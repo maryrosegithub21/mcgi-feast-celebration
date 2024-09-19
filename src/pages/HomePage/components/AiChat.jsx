@@ -3,8 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import styles from './AiChat.module.css'; // Import the CSS module
 import googleAIStudioAPI from './googleAIStudioAPI'; // Assuming you have this API function
 
-
-const AiChat = () => {
+const AiChat = ({ isVisible, onClose }) => {
   const [chatInput, setChatInput] = useState('');
   const [chatResponses, setChatResponses] = useState([]);
   const navigate = useNavigate();
@@ -25,7 +24,7 @@ const AiChat = () => {
       setChatResponses([
         ...chatResponses,
         { type: 'user', text: chatInput },
-        { type: 'bot', text: response.data },
+        { type: 'bot', text: response.response },
       ]);
     } catch (error) {
       console.error('Error fetching AI response:', error);
@@ -39,11 +38,13 @@ const AiChat = () => {
     setChatInput('');
   };
 
+  if (!isVisible) return null;
+
   return (
     <div className={styles.chatContainer}>
       <div className={styles.chatHeader}>
-       
         <div className={styles.headerText}>MCGI AI Chat Assistant</div>
+        <button onClick={onClose} className={styles.closeButton}>X</button>
       </div>
       <div className={styles.chatWindow}>
         {chatResponses.map((response, index) => (

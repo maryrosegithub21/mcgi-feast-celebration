@@ -1,8 +1,13 @@
-// src/pages/HomePage/components/googleAIStudioAPI.js
+import axios from 'axios';
 
-const googleAIStudioAPI = async (input) => {
-  // Placeholder response
-  return { data: "This is a placeholder response from Google AI Studio API." };
+const googleAIStudioAPI = async (message) => {
+  try {
+    const response = await axios.post("/api/ai-chat", { message });
+    return response.data;
+  } catch (error) {
+    console.error("Error fetching AI response:", error);
+    throw error;
+  }
 };
 
 export default googleAIStudioAPI;
