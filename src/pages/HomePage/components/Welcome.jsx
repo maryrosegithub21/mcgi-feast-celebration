@@ -1,6 +1,6 @@
 
 import React  from 'react'
-import { HashLink as Link } from 'react-router-hash-link';
+// import { HashLink as Link } from 'react-router-hash-link';
 // === To applied the style you have to import this === //
 import styles from './Welcome.module.css'
 // === To applied the style you have to import this === //
@@ -16,7 +16,9 @@ import classroom from '../../../assets/hero/legacy.png'
 // ===== FOR SHOWING THE PROGRAMMES HELPS TEACHER AND SCHOOL === //
 import { useState } from 'react'
 import { useEffect } from 'react'
-import { FaBullseye } from 'react-icons/fa6'
+// import { FaBullseye } from 'react-icons/fa6'
+
+import Register from './Register';
 
 // for showing the sign up or log in form
 import { useNavigate } from 'react-router-dom';
@@ -28,8 +30,10 @@ export default function Body2() {
   const [digitalTechnologies, setDigitalTechnologies] = useState(false)
   const [keycompetencies, setKeycompetencies] = useState(false)
   const [ir, setIr] = useState(false)
+  const [showForm, setShowForm] = useState(false); // State for modal visibility
 
-  const navigate = useNavigate(); // for showing the project library when sign in the student
+
+  const navigate = useNavigate(); 
 
 
   function handleClickKeyCompetencies() {
@@ -108,11 +112,15 @@ export default function Body2() {
 
 // ===== FOR SIGN UP BUTTON ===== //
 const [isSignUpClass, setIsSignUpClass] = useState(false);
-
-function handleClicksignUpClass(){
-  window.open('https://docs.google.com/forms/d/1RHi93Cpq3e6zWXatLa7yLFjYH-64_ZIMzfcZhWFUSMc/edit', '_blank');
-
+function handleClicksignUpClass(e) {
+  e.preventDefault();
+  setShowForm(true); // Show the modal when the button is clicked
 }
+
+const handleCloseModal = () => {
+  setShowForm(false); // Hide the modal when closed
+};
+
 useEffect(() => {
   console.log(isSignUpClass);
   if(isSignUpClass === true) {
@@ -339,7 +347,7 @@ It is a biblical talk which aims to help people learn the Bible deeper through a
     {/*  ^^^ For Fifth Row on the page start from banner the enchance competencies and description ^^^ */}
 
     {/*  ==== For six Row on the page start from banner the what are you waiting for or classroom photos === */}
-<div className={styles.classDivConatinerBody2MRA}>
+{/* <div className={styles.classDivConatinerBody2MRA}>
 <img className={styles.classRoomPhoto} src={classroom} alt="classroom" ></img>
   <div className={styles.classroomInquiryBody2RightMRA}>
   <h1 className={styles.waitingH1}> The Legacy Continues </h1>
@@ -351,11 +359,11 @@ It is a biblical talk which aims to help people learn the Bible deeper through a
   <br />
   <p className={styles.informationP}>If you need more information, we are happy to answer any questions you may have.</p>
   
-  <div className={styles.btnDivBody2classroomMRA}>
+  <div className={styles.btnDivBody2classroomMRA}> */}
 
-    <button type="button" onClick={handleClicksignUpClass} className={styles.SignUpButtonBody2MRA}>
+    {/* <button type="button" onClick={handleClicksignUpClass} className={styles.SignUpButtonBody2MRA}> */}
     {/* {isSignUpClass ?  <LogIn /> : "" }  */}
-      REGISTER
+      {/* REGISTER
     </button>
    
     </div>
@@ -363,6 +371,51 @@ It is a biblical talk which aims to help people learn the Bible deeper through a
 </div>
     
     </div>
+    </div> */}
+
+
+<div className={styles.classDivConatinerBody2MRA}>
+          <img className={styles.classRoomPhoto} src={classroom} alt="classroom" />
+          <div className={styles.classroomInquiryBody2RightMRA}>
+            <h1 className={styles.waitingH1}>The Legacy Continues</h1>
+            <br />
+            <br />
+            <h2 className={styles.startH1}>
+              Know more about the charity works of the Members Church of God International.
+            </h2>
+            <br />
+            <br />
+            <p className={styles.informationP}>
+              If you need more information, we are happy to answer any questions you may have.
+            </p>
+
+            <div className={styles.btnDivBody2classroomMRA}>
+              <button
+                type="button"
+                onClick={handleClicksignUpClass}
+                className={styles.SignUpButtonBody2MRA}
+              >
+                REGISTER
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Render the Register modal */}
+      <Register show={showForm} onClose={handleCloseModal}>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfBFrZdtH6BavnEWN2QMyRpR0lsD48Oy1O6mEUy9SS9dcLgGg/viewform?embedded=true"
+          width="100%"
+          height="100%"
+          frameBorder="0"
+          marginHeight="0"
+          marginWidth="0"
+          title="Registration Form"
+        >
+          Loading…
+        </iframe>
+      </Register>
     </div>
-  )
+  );
 }
