@@ -2,13 +2,16 @@ import { useState, useEffect } from 'react';
 import styles from '../components/LogIn.module.css';
 import LogInImg from '../../../assets/login-singup/login-logo.png';
 import { useNavigate } from 'react-router-dom';
+import GoogleSheets from './GoogleSheets.jsx'; // Import the GoogleSheets component
 
 export default function LogIn() {
   const [emailLogin, setEmailLogin] = useState("");
   const [passwordLogin, setPasswordLogin] = useState("");
   const [churchid, setChurchid] = useState("");
   const [messageToRender, setMessageToRender] = useState("");
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // State to track login status
   const navigate = useNavigate();
+  
 
   function handleLoginMember(e) {
     e.preventDefault();
@@ -31,6 +34,7 @@ export default function LogIn() {
             console.log("Successful!!!");
             const message = <span style={{ color: "green" }}>Login Successful</span>;
             setMessageToRender(message);
+            setIsLoggedIn(true);
           }
           return res.json();
         });
@@ -55,7 +59,9 @@ export default function LogIn() {
 
   return (
     <div>
-      {isShown && (
+      {isLoggedIn ? (
+        <GoogleSheets /> // Render GoogleSheets component if logged in
+      ) : (
         <div className={styles.LogInConatainerDivMRA} id="form">
           <form className={styles.LogInConatainerFormMRA}>
             <div className={styles.LogInDivMRA}>
