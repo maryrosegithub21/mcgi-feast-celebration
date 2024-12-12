@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
+// import { useState, useEffect } from 'react';
 import styles from '../components/LogIn.module.css';
 import LogInImg from '../../../assets/login-singup/login-logo.png';
 import { useNavigate } from 'react-router-dom';
@@ -51,9 +52,9 @@ export default function LogIn() {
     }
   }
 
-  const [isShown, setIsShown] = useState(true);
+  // const [isShown, setIsShown] = useState(true);
   const handleClickClose = () => {
-    setIsShown(false);
+    // setIsShown(false);
     navigate(`/mcgi-feast-portal`);
   };
 

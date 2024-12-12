@@ -12,6 +12,8 @@ header {
     bottom: 0rem;
     /* z-index: 1100; */
     /* position: relative; */
+    transition: background-color 0.3s ease; /* Transition for smooth background change */
+    
 }
 
 /* === Center Part of the NavBar */
@@ -119,7 +121,7 @@ height: 2rem;
       padding-top: 8rem;
       transition: top 1s;
       margin-top: 5rem;
-      background-color: var(--mainColor);
+      background-color: blue; 
      
     }
     .nav{
@@ -130,6 +132,7 @@ height: 2rem;
         width: 100%;
         margin: 0;
         padding: 0;
+        
 
     }
     .headerDivRight{
@@ -147,7 +150,7 @@ height: 2rem;
         transition: top 1s;
         z-index: 10;
         margin-top: 5rem;
-
+        background-color: blue; /* Blue background for the right div */
     }
     nav a{
         font-size: 1.5rem;
@@ -164,5 +167,6 @@ height: 2rem;
         top: 0;
 
     }
+   
 }
 /* ^^^ For small screen ^^^ */

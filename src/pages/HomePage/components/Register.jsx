@@ -1,4 +1,5 @@
-import React from 'react';
+// import React from 'react';
+import PropTypes from 'prop-types';
 import styles from '../components/Register.module.css';
 
 export default function Register({ show, onClose, children }) {
@@ -15,3 +16,9 @@ export default function Register({ show, onClose, children }) {
     </div>
   );
 }
+
+Register.propTypes = {
+  show: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+  children: PropTypes.node.isRequired,
+};
