@@ -1,0 +1,51 @@
+# # services:
+# #   backend:
+# #     build: ./MCGI-CHRISTCHURCH-Back-End
+# #     ports:
+# #       - "4000:4000"
+   
+
+# #   frontend:
+# #     build: ./MCGI-CHRISTCHURCH-Front-End
+# #     ports:
+# #       - "3000:3000"
+    
+      
+
+# version: '3.8' # Specify a version
+# services:
+#   backend:
+#     image: maryrosedocker/mcgi-backend:latest
+#     ports:
+#       - "4000:4000"
+
+#   frontend:
+#     image: maryrosedocker/mcgi-frontend:latest
+#     ports:
+#       - "3000:3000"
+
+
+version: "3.9"  # Latest version is recommended
+
+services:
+  backend:
+    image: maryrosedocker/mcgi-backend:latest
+    ports:
+      - "4000:4000"
+    # Important: Define a network so frontend can reach backend
+    networks:
+      - mcgi-network
+
+  frontend:
+    image: maryrosedocker/mcgi-frontend:latest
+    ports:
+      - "3000:80"  # Expose frontend on 80, map to container port 80 (if Nginx is used)
+    depends_on:
+      - backend  # Ensure backend starts before frontend
+    # Connect to the same network as the backend
+    networks:
+      - mcgi-network
+
+# Define the network
+networks:
+  mcgi-network:
