@@ -1,5 +1,5 @@
-# # Use the official Node.js image as the base image
-# FROM node:16-alpine
+# # Use the official Node.js image as a parent image
+# FROM node:14
 
 # # Set the working directory
 # WORKDIR /app
@@ -16,32 +16,33 @@
 # # Copy the .env file
 # COPY .env .env
 
-# # Set environment variable to ignore ESLint errors
-# ENV ESLINT_NO_DEV_ERRORS=true
-
-# # Build the React application
-# RUN npm run build
-
-# # Install a simple HTTP server to serve the static files
-# RUN npm install -g serve
-
 # # Expose the port the app runs on
 # EXPOSE 3000
 
-# # Serve the build directory
-# CMD ["serve", "-s", "build"]
+# # Run the application
+# CMD ["npm", "start"]
 
-# Use a smaller base image (nginx) for serving static files
-FROM nginx:alpine
 
-# Create a directory for the app
+# Use a more recent LTS Node.js version (e.g., 18 or 20) for better performance and security
+FROM node:20
+
+# Set the working directory
 WORKDIR /app
 
-# Copy the build output to the nginx webroot
-COPY build /usr/share/nginx/html
+# Copy only necessary files for dependency installation to leverage Docker's caching
+COPY package*.json ./
 
-# Expose port 80 (default for HTTP)
-EXPOSE 80
+# Install dependencies
+RUN npm ci --omit=dev  
 
-# Start nginx
-CMD ["nginx", "-g", "daemon off;"]
+# Copy the rest of the application code
+COPY . .
+
+# Copy the .env file (consider using secrets instead for better security)
+COPY .env .env 
+
+# Expose the port the app runs on
+EXPOSE 3000
+
+# Run the application
+CMD ["npm", "start"]

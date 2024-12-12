@@ -1,53 +1,10 @@
-# Welcome to MCGI CHRISTCHURCH Front Page
+# Welcome to MCGI CHRISTCHURCH Back-End
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules. This is a web page application for the members church of God in doing special event that guest would need to register to join to there event. 
-
-## IMPORTANT REMINDER:
-- After cloning and pulling the base project. 
-- You have to install some library to able to access the whole pages without causing error or bug. 
-- For more information on how to clone, refer to the Git workflow
-
-# How to Start:
-
-- 1. After cloning this repo to your local directory, change to the project directory first:
-
-### cd current-repo-name
-
-- 2. And then install packages:
-
-### npm install or npm i
-
-- 3. And then Install library:
-
-### npm install react-router-dom 
-### npm install use-resize-observer --save-dev
-### npm install react-slideshow-image -S
-### npm i -D react-router-DOM
-### npm install react-router-dom@6
-
-
-- 4 . Runs the app in the development mode:
-
-### npm run dev
-
-
-- Ctrl + Click the link in your terminal http://localhost:5173/MCGI-BRETHREN-DAY-NZ to view it in your browser.
-
-
-###  Other Information:
-
-- The page will reload when you make changes.
-- Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules. This is a web page application for the members church of God in doing special event that guest would need to register to join to there event.
+This repository contains the back-end services for the MCGI CHRISTCHURCH event registration application. The back-end is built using Node.js and Express, and it handles API requests, database interactions, and other server-side logic.
 
 ## IMPORTANT REMINDER:
 - After cloning and pulling the base project.
-- You have to install some library to able to access the whole pages without causing error or bug.
+- You have to install some library to able to access the whole services without causing error or bug.
 - For more information on how to clone, refer to the Git workflow.
 
 ## How to Start:
@@ -56,7 +13,6 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 ```sh
 cd current-repo-name
-
 
 And then install packages:
 npm install or npm i
@@ -70,14 +26,24 @@ To start the development server:
 npm run dev
 
 
+To run tests:
+npm test
+
+
 To build the project for production:
 npm run build
 
 
-To preview the production build:
-npm run preview
-
-
 Additional Information
-For more details on the project structure and coding guidelines, refer to the internal documentation.
-Ensure that you follow the ESLint rules and code formatting guidelines provided in the project.
+Ensure that you have the necessary environment variables set up. Refer to the .env.example file for the required variables.
+For database setup and migrations, refer to the internal documentation.
+Follow the coding guidelines and best practices provided in the project.
+
+# Other Information
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
