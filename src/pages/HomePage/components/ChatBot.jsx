@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+// import React, { useState } from 'react';
 import './ChatBot.css';
 
 
@@ -56,7 +57,8 @@ const ChatBot = () => {
       {optionsType === 'buttons' && (
         <div className="options">
           {options.map((option, index) => (
-            <button key={index} onClick={() => handleOptionClick(option)}>
+            <button key={index} onClick={() => (option)}>
+            {/* <button key={index} onClick={() => handleOptionClick(option)}> */}
               {option.text}
             </button>
           ))}

@@ -1,6 +1,4 @@
 
-import React  from 'react'
-// import { HashLink as Link } from 'react-router-hash-link';
 // === To applied the style you have to import this === //
 import styles from './Welcome.module.css'
 // === To applied the style you have to import this === //
@@ -21,7 +19,6 @@ import { useEffect } from 'react'
 import Register from './Register';
 
 // for showing the sign up or log in form
-import { useNavigate } from 'react-router-dom';
 
 export default function Body2() {
  
@@ -33,7 +30,7 @@ export default function Body2() {
   const [showForm, setShowForm] = useState(false); // State for modal visibility
 
 
-  const navigate = useNavigate(); 
+  // const navigate = useNavigate(); 
 
 
   function handleClickKeyCompetencies() {
@@ -339,39 +336,7 @@ It is a biblical talk which aims to help people learn the Bible deeper through a
 
     </div> }
     {/*=================== Church Services and Events========= */}
-
-
-
-
-
     {/*  ^^^ For Fifth Row on the page start from banner the enchance competencies and description ^^^ */}
-
-    {/*  ==== For six Row on the page start from banner the what are you waiting for or classroom photos === */}
-{/* <div className={styles.classDivConatinerBody2MRA}>
-<img className={styles.classRoomPhoto} src={classroom} alt="classroom" ></img>
-  <div className={styles.classroomInquiryBody2RightMRA}>
-  <h1 className={styles.waitingH1}> The Legacy Continues </h1>
-  <br />
-  <br />
-  <h2 className={styles.startH1} >Know more about the charity works of
-  ​the Members Church of God International.</h2>
-  <br />
-  <br />
-  <p className={styles.informationP}>If you need more information, we are happy to answer any questions you may have.</p>
-  
-  <div className={styles.btnDivBody2classroomMRA}> */}
-
-    {/* <button type="button" onClick={handleClicksignUpClass} className={styles.SignUpButtonBody2MRA}> */}
-    {/* {isSignUpClass ?  <LogIn /> : "" }  */}
-      {/* REGISTER
-    </button>
-   
-    </div>
-  </div>
-</div>
-    
-    </div>
-    </div> */}
 
 
 <div className={styles.classDivConatinerBody2MRA}>
